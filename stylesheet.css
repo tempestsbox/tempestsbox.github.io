@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/fontawesome.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/brands.css');
+
+body {
+    font-family: 'Roboto', 'sans-serif';
+}
+*.default {
+    font-size: 20px;
+    text-align: center;
+}
+*.header {
+    font-size: 30px;
+    text-align: center;
+}
+
+*#infoContainer {
+	display: inline-block;
+	max-width: 725px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 10px;
+	text-align: left;
+}
+*#infoContainer p {
+  font-size: 17.5pt;
+}
+*#mainContainer {
+	display: block;
+	max-width: 1000px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+*.site-title {
+    font-size: 260%;
+    text-align: center;
+    font-weight: bold;
+    line-height: 3px;
+}
+*.page-title {
+    font-size: 150%;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1px;
+}
+
+*.social-icons {
+    font-size: 200%;
+    text-align: left;
+}
+
+*:any-link {
+    color: black;
+    text-decoration: none;
+
+    transition: opacity .25s ease-out;
+    -moz-transition: opacity .25s ease-out;
+    -webkit-transition: opacity .25s ease-out;
+    -o-transition: opacity .25s ease-out;
+}
+*:any-link:hover {
+    opacity: 0.60;
+    text-decoration: underline;
+}
+
+*.footer-padding {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    color: #000000;
+    background-color: #f1f1f1;
+    text-align: center;
+    line-height: 8px;
+}
+
+*#navigation li {
+    font-size: 20px;
+    text-align: center;
+    display: inline-flex;
+    background-position: 100% .2em;
+    padding-left: 1.4em;
+    padding-right: .8em;
+}
+*#navigation li.home {
+    padding-left: .3em;
+}
+*#navigation li.features {
+    padding-left: 1.35em;
+    padding-right: .525em;
+}
