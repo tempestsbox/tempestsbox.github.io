@@ -13,6 +13,6 @@ layout: default
 
 <div id="mainContainer">
     <div id='infoContainer'>
-        <p align=left>A rebirth of Zoey's TTB for 1.15+, to install into your vanilla survival world, adding new features that are not normally in the game. This provides you with many new features, items, blocks, and more!</p>
+        A rebirth of Zoey's TTB for 1.15+, to install into your vanilla survival world, adding new features that are not normally in the game. This provides you with many new features, items, blocks, and more!
     </div>
 </div>
