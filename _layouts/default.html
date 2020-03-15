@@ -2,24 +2,27 @@
 <html>
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>{{ page.title }} | {{ site.title }}</title>
         <meta name="description" content="A rebirth of Zoey's TTB for 1.15+" />
-
         <link rel="stylesheet" href="{{ site.url }}/stylesheet.css" />
         <link rel="icon" type="image/png" href="{{ site.url }}/assets/logos/ttb/128x.png" />
     </head>
 
     <body>
-        <a href={{ site.url }} class='site-title'> <h3> {{ site.title }} </h3> </a>
+        <header>
+            <a href={{ site.url }}> <h3> {{ site.title }} </h3> </a></li>
+        </header>
 
         <hr>
 
-        <p class='default'>{{ content }}</p>
+        {{ content }}
 
-        <footer class='footer-padding' id='footer'>
-            <a href="https://github.com/tempestsbox/ttb"><i class='fab fa-github social-icons'></i></a>
-            <a href="https://discord.gg/6TFaAuW" style="padding-left:10px;"><i class='fab fa-discord social-icons'></i></a>
+        <footer>
+            <a href="https://github.com/tempestsbox/ttb"><i class='fab fa-github footer-icons'></i></a>
+            <a href="https://discord.gg/6TFaAuW" style="padding-left:10px;"><i class='fab fa-discord footer-icons'></i></a>
+            <a href="https://curseforge.com/minecraft/customization/ttb" style="padding-left:10px;"><i class='fas fa-download footer-icons'></i></a>
 
             <p class= 'copyright' id='copyright'></p>
 
@@ -27,5 +30,12 @@
                 document.getElementById('copyright').innerHTML = '© ' + new Date().getFullYear() + ' <a href="{{ site.url }}">The Tempest\'s Box: Reborn</a>';
             </script>
         </footer>
+
+        <script>            
+            function toggleTheme() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
     </body>
 </html>

@@ -1,17 +1,17 @@
 ---
 title: 'Download'
-layout: default
+layout: page/download
 permalink: /download
 ---
 
-<ul id="navigation" align="center">
-    <li class="home"><a href="{{ site.url }}">home</a></li>
-    <li class="features"><a href="{{ site.url }}/features">features</a></li>
-    <li><a href="{{ site.url }}/download"><b>download</b></a></li>
-</ul>
+<a href='https://curseforge.com/minecraft/customization/ttb'>
+    <button id='download-btn' class='curseforge'>
+        <i class='fa fa-download'></i> Download (CurseForge)
+    </button>
+</a>
 
-<hr>
-
-<p class='default'>
-    Download Stuff
-</p>
+<a href='https://github.com/tempestsbox/ttb/archive/ver/1.16.zip'>
+    <button id='download-btn' class='github'>
+        <i class='fa fa-download'></i> Download (GitHub ver/1.16)
+    </button>
+</a>
