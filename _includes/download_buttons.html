@@ -1,0 +1,32 @@
+<a href='https://curseforge.com/minecraft/customization/ttb'>
+    <button id='download-btn-curseforge' class='curseforge'>
+        <i class='fa fa-download'></i> Download (CurseForge)</button>
+</a>
+
+<a id='download-btn-github-link'>
+    <button id='download-btn-github' class='github'><i class='fab fa-github'></i> Loading version...</button>
+</a>
+
+<script>
+    const repo = 'tempestsbox/ttb'
+    const prefix_sources = '<i class=\'fa fa-download\'></i> Download Sources ('
+
+    async function fetchButtonData() {
+        let response = await fetch('https://api.github.com/repos/' + repo + '/releases')
+        let data = await response.json()
+        if (data[0]) {
+            updateButton(data[0].tag_name)
+            return
+        }
+        response = await fetch('https://api.github.com/repos/' + repo)
+        data = await response.json()
+        updateButton(data.default_branch)
+    }
+
+    function updateButton(archive) {
+        document.getElementById('download-btn-github').innerHTML = prefix_sources + archive + ')';
+        document.getElementById('download-btn-github-link').href = 'https://github.com/' + repo + '/archive/' + archive + '.zip';
+    }
+
+    fetchButtonData();
+</script>

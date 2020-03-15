@@ -40,18 +40,49 @@ p {
 	margin: 0 auto;
 }
 
-*#download-btn {
-  border: none;
-  color: white;
-  padding: 12px 30px;
-  cursor: pointer;
-  font-size: 20px;
-  display: table-cell;
+*#spinner {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    height: 35px;
+    width: 35px;
+    margin: -25px 0 0 -25px;
+    border: 4px rgba(0, 0, 0, 0.25) solid;
+    border-top: 4px #2e2e2e solid;
+    border-right: 4px #2e2e2e solid;
+    border-bottom: 4px #2e2e2e solid;
+    border-radius: 50%;
+    -webkit-animation: spin 1s infinite linear;
+    animation: spin 1s infinite linear;
 }
-*#download-btn.curseforge {
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+*#download-btn-curseforge {
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    display: table-cell;
+
     background-color: purple;
 }
-*#download-btn.github {
+*#download-btn-github {
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    display: table-cell;
+
     background-color: rgb(70, 70, 70);
 }
 
