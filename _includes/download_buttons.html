@@ -1,4 +1,4 @@
-<a href='https://curseforge.com/minecraft/customization/ttb'>
+<a href='https://curseforge.com/{{ site.curseforge-link }}'>
     <button id='download-btn-curseforge' class='curseforge'>
         <i class='fa fa-download'></i> Download (CurseForge)</button>
 </a>
@@ -8,7 +8,7 @@
 </a>
 
 <script>
-    const repo = 'tempestsbox/ttb'
+    const repo = '{{ site.github-repo }}'
     const prefix_sources = '<i class=\'fa fa-download\'></i> Download Sources ('
 
     async function fetchButtonData() {

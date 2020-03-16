@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>{{ page.title }} | {{ site.title }}</title>
-        <meta name="description" content="A rebirth of Zoey's TTB for 1.15+" />
+        <meta name="description" content="{{ site.description }}" />
         <link rel="stylesheet" href="{{ site.url }}/stylesheet.css" />
         <link rel="icon" type="image/png" href="{{ site.url }}/assets/logos/ttb/128x.png" />
     </head>
@@ -20,9 +20,9 @@
         {{ content }}
 
         <footer>
-            <a href="https://github.com/tempestsbox/ttb"><i class='fab fa-github footer-icons'></i></a>
-            <a href="https://discord.gg/6TFaAuW" style="padding-left:10px;"><i class='fab fa-discord footer-icons'></i></a>
-            <a href="https://curseforge.com/minecraft/customization/ttb" style="padding-left:10px;"><i class='fas fa-download footer-icons'></i></a>
+            <a href="https://github.com/{{ site.github-repo }}"><i class='fab fa-github footer-icons'></i></a>
+            <a href="https://discord.gg/{{ site.discord-invite-code }}" style="padding-left:10px;"><i class='fab fa-discord footer-icons'></i></a>
+            <a href="https://curseforge.com/{{ site.curseforge-link }}" style="padding-left:10px;"><i class='fas fa-download footer-icons'></i></a>
 
             <p class= 'copyright' id='copyright'></p>
 
