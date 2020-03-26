@@ -3,10 +3,9 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/brands.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/solid.css');
 
-body {
+/* all */
+html {
     font-family: 'Roboto', 'sans-serif';
-    background-color: white;
-    color: black;
 }
 header {
     font-size: 260%;
@@ -14,85 +13,11 @@ header {
     font-weight: bold;
     line-height: 3px;
 }
-p {
-    font-size: 20px;
+*#content {
     text-align: center;
-}
-*.dark-mode {
-    background-color: black;
-    color: white;
-}
-
-*#infoContainer {
-	display: inline-block;
-	max-width: 725px;
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0 10px;
-	text-align: center;
-	font-size: 20px;
-}
-*#mainContainer {
-	display: block;
-	max-width: 1000px;
-	text-align: center;
-	margin: 0 auto;
-}
-
-*#spinner {
-    position: absolute;
-    display: block;
-    top: 50%;
-    left: 50%;
-    height: 35px;
-    width: 35px;
-    margin: -25px 0 0 -25px;
-    border: 4px rgba(0, 0, 0, 0.25) solid;
-    border-top: 4px #2e2e2e solid;
-    border-right: 4px #2e2e2e solid;
-    border-bottom: 4px #2e2e2e solid;
-    border-radius: 50%;
-    -webkit-animation: spin 1s infinite linear;
-    animation: spin 1s infinite linear;
-}
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(359deg);
-    }
-}
-
-*#download-btn-curseforge {
-    border: none;
-    color: white;
-    padding: 12px 30px;
-    cursor: pointer;
-    font-size: 20px;
-    display: table-cell;
-
-    background-color: purple;
-}
-*#download-btn-github {
-    border: none;
-    color: white;
-    padding: 12px 30px;
-    cursor: pointer;
-    font-size: 20px;
-    display: table-cell;
-
-    background-color: rgb(70, 70, 70);
-}
-
-*.footer-icons {
-    font-size: 200%;
-    text-align: left;
 }
 
 *:any-link {
-    color: black;
     text-decoration: none;
 
     transition: opacity .25s ease-out;
@@ -103,16 +28,6 @@ p {
 *:any-link:hover {
     opacity: 0.60;
     text-decoration: underline;
-}
-
-footer {
-    padding-top: 16px;
-    padding-bottom: 6px;
-
-    color: #000000;
-    background-color: #f1f1f1;
-    text-align: center;
-    line-height: 8px;
 }
 
 *#navigation li {
@@ -129,4 +44,79 @@ footer {
 *#navigation li.features {
     padding-left: 1.35em;
     padding-right: .525em;
+}
+
+footer {
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    text-align: center;
+    line-height: 9px;
+}
+div#footer {
+    text-align: center;
+}
+*.footer-icons {
+    font-size: 200%;
+    text-align: left;
+}
+
+/* default theme */
+body {
+    background-color: white;
+    color: rgb(33, 33, 33);
+}
+p {
+    display: inline-block;
+    max-width: 725px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 20px;
+}
+*:any-link {
+    color: black;
+}
+footer {
+    background-color: #f1f1f1;
+    color: rgb(33, 33, 33);
+}
+
+/* dark theme */
+@media (prefers-color-scheme: dark) {
+    body, h3, header, *:any-link {
+        background-color: rgb(29, 29, 29);
+        color: white;
+    }
+    footer {
+        background-color: rgb(33, 33, 33);
+        color: white;
+    }
+}
+
+
+div#download-button {
+    text-align: center;
+}
+button {
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    display: table-cell;
+}
+button#download-btn-curseforge {
+    background-color: purple;
+    padding: 12px 30px;
+}
+button#download-btn-github {
+    background-color: rgb(70, 70, 70);
+    padding: 12px 30px;
+}
+button#theme-btn {
+    background-color: rgb(70, 70, 70);
+    padding: 8px 17px;
 }

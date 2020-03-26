@@ -10,31 +10,22 @@
         <link rel="icon" type="image/png" href="{{ site.url }}/assets/logos/ttb/128x.png" />
     </head>
 
-    <body>
-        <header>
-            <a href={{ site.url }}> <h3> {{ site.title }} </h3> </a></li>
+    <body class='canInvert'>
+        <header class='canInvert'>
+            <a href={{ site.url }}> <h3 class='canInvert'> {{ site.title }} </h3> </a></li>
         </header>
 
-        <hr>
+        <div id='content'>
+            {{ content }}
+            <br>
+        </div>
 
-        {{ content }}
-
-        <footer>
-            <a href="https://github.com/{{ site.github-repo }}"><i class='fab fa-github footer-icons'></i></a>
-            <a href="https://discord.gg/{{ site.discord-invite-code }}" style="padding-left:10px;"><i class='fab fa-discord footer-icons'></i></a>
-            <a href="https://curseforge.com/{{ site.curseforge-link }}" style="padding-left:10px;"><i class='fas fa-download footer-icons'></i></a>
-
-            <p class= 'copyright' id='copyright'></p>
-
-            <script>
-                document.getElementById('copyright').innerHTML = '© ' + new Date().getFullYear() + ' <a href="{{ site.url }}">The Tempest\'s Box: Reborn</a>';
-            </script>
-        </footer>
+        {% include footer.html %}
 
         <script>            
             function toggleTheme() {
                 var element = document.body;
-                element.classList.toggle("dark-mode");
+                element.classList.toggle("inverted");
             }
         </script>
     </body>

@@ -1,0 +1,39 @@
+<footer class='canInvert'>
+    <div id='footer'>
+        <!-- github -->
+        <a href="https://github.com/{{ site.github-repo }}">
+            <i class='fab fa-github footer-icons'>
+            </i></a>
+        <!-- discord -->
+        <a href="https://discord.gg/{{ site.discord-invite-code }}" style="padding-left:10px;">
+            <i class='fab fa-discord footer-icons'>
+            </i></a>
+        <!-- download -->
+        <a href="/download" style="padding-left:10px;">
+            <i class='fas fa-download footer-icons'>
+            </i></a>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <p class='copyright' id='copyright'> Loading date... </p>
+        <script>
+            document.getElementById('copyright').innerHTML = '© ' + new Date().getFullYear() + ' <a href="{{ site.url }}">The Tempest\'s Box: Reborn</a>';
+        </script>
+    </div>
+</footer>
+
+<!-- <br>
+
+<div style='text-align: center;'>
+    <button id='theme-btn' onclick='toggleTheme()'>
+        Toggle Theme
+    </button>
+    <script>
+        function toggleTheme() {
+            document.getElements
+        }
+    </script>
+</div> -->
