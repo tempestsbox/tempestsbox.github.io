@@ -13,8 +13,16 @@ header {
     font-weight: bold;
     line-height: 3px;
 }
-*#content {
+h1 {
+    margin: 10px;
+    margin-top: 16px;
+}
+hr {
+    margin-top: 20px;
+}
+*#content, li, img {
     text-align: center;
+    font-size: 20px;
 }
 
 *:any-link {
@@ -36,7 +44,7 @@ header {
     display: inline-flex;
     background-position: 100% .2em;
     padding-left: 1.4em;
-    padding-right: .8em;
+    padding-right: 1.4em;
 }
 *#navigation li.home {
     padding-left: .3em;
@@ -96,7 +104,6 @@ footer {
         color: white;
     }
 }
-
 
 div#download-button {
     text-align: center;
