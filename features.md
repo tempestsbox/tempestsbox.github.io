@@ -9,7 +9,7 @@ The Tempest's Box adds countless features that add to the game, providing you wi
 ---
 
 <br>
-<img src='/assets/docs/tempest_crafter-craft.gif' width=427px height=240px style='border:5px solid black; border-radius: 6px;'>
+![tempest_crafter-craft.gif]({{ site.url }}/assets/docs/tempest_crafter-craft.gif)
 
 # Tempest Crafter
 The Tempest Crafter is needed to craft the majority of TTB blocks and items.  
