@@ -32,6 +32,9 @@ img {
     text-align: center;
     position: inline;
 }
+img[src$="404.png"] {
+    border: 0px;
+}
 
 *:any-link {
     text-decoration: none;
