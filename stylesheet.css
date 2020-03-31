@@ -27,9 +27,10 @@ hr {
 img {
     border: 5px solid black;
     border-radius: 6px;
-    width: 427px;
-    height: 240px;
+    width: 60%;
+    height: 60%;
     text-align: center;
+    position: inline;
 }
 
 *:any-link {
