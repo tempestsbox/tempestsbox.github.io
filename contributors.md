@@ -97,6 +97,6 @@ permalink: /contributors
     <br>
 </div>
 
-[twitter]: /assets/logos/twitter.svg
-[github]: /assets/logos/github.svg
-[youtube]: /assets/logos/youtube.svg
+[twitter]: /assets/logos/twitter/logo-svg.svg
+[github]: /assets/logos/github/logo-svg.svg
+[youtube]: /assets/logos/youtube/logo-svg.svg
