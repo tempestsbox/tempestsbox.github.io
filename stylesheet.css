@@ -35,11 +35,6 @@ img {
 img[src$="404.png"] {
     border: 0px;
 }
-img[src$=".svg"] {
-    background-color: white;
-    border: 4px solid white;
-    max-width: 35%;
-}
 
 *:any-link {
     text-decoration: none;
