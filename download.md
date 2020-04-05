@@ -10,7 +10,7 @@ permalink: /download
 
 ## Installation Instructions
 Unzip `ttb-<ver>.zip`, and move the `ttb_data` folder to the `datapacks` folder in your desired world save folder, and type `/reload` - on a modded server (Bukkit/Spigot/Paper and likewise) you may have to type `/minecraft:reload`. Also move `ttb_resources` into your `resourcepacks` folder and enable it.  
-If you don't know where your Minecraft files are stored, [click here](https://help.mojang.com/customer/en/portal/articles/1480874-where-are-minecraft-files-stored-?).
+If you don't know where your Minecraft files are stored, [click here](https://help.minecraft.net/hc/en-us/articles/360035131551-Where-are-Minecraft-files-stored-).
 
 ## Contributors
 \- [Andante]({{ site.url }}/contributors#Andante) -  
