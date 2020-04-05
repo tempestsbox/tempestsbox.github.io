@@ -71,9 +71,6 @@ img[src$="logo-svg.svg"] {
 }
 
 footer {
-    padding-top: 16px;
-    padding-bottom: 16px;
-
     text-align: center;
     line-height: 9px;
 }
@@ -104,9 +101,24 @@ p {
 *:any-link {
     color: black;
 }
-footer {
+.lighter-background {
     background-color: #f1f1f1;
     color: rgb(33, 33, 33);
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+header.lighter-background {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+hr.lighter-background {
+    padding-top: 0;
+    padding-bottom: 0;
+    outline-color: currentColor;
+    max-width: 20%;
+}
+hr.separator {
+    max-width: 30%;
 }
 
 /* dark theme */
@@ -115,9 +127,14 @@ footer {
         background-color: rgb(29, 29, 29);
         color: white;
     }
-    footer {
+    .lighter-background {
         background-color: rgb(33, 33, 33);
         color: white;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    hr.lighter-background {
+        outline-color: rgb(33, 33, 33);
     }
 }
 
