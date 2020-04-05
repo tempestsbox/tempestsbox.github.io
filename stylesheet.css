@@ -120,6 +120,12 @@ hr.lighter-background {
 hr.separator {
     max-width: 30%;
 }
+br.smaller {
+    content: "";
+    margin: 2em;
+    display: block;
+    font-size: 50%;
+}
 
 /* dark theme */
 @media (prefers-color-scheme: dark) {
