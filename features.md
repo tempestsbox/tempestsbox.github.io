@@ -16,7 +16,7 @@ The Tempest's Box adds countless features that add to the game, providing you wi
 ![tempest_crafter-craft.gif](/assets/docs/tempest_crafter-craft.gif)
 ## Tempest Crafter
 The Tempest Crafter is needed to craft the majority of TTB blocks and items.  
-To craft the Tempest Crafter, place a dropper, fill it with the items shown in the image below, and throw an End Crystal on top.
+To craft the Tempest Crafter, place a dropper, fill it with the items shown in the GIF above, and throw an End Crystal on top.
 
 <!--  -->
 
@@ -27,7 +27,7 @@ To craft the Tempest Crafter, place a dropper, fill it with the items shown in t
 <br>
 TTB comes with two new ores - Vulcaanium and Amethyst.
 ## Amethyst
-Amethyst is used to craft certain machines, but most importantly, it can be placed into a Tempite Container to power nearby machines.  
+Amethyst is used to craft certain machines, but most importantly, it can be placed into Tempite Stone to power nearby machines.  
 It can be found at Y<=40.
 ## Vulcaanium
 Vulcaanium is used to craft some items such as the Eckspei Rod; however, it's mostly used to ascend machines into something more powerful.  

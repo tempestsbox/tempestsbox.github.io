@@ -80,6 +80,7 @@ div#footer {
 *.footer-icons {
     font-size: 200%;
     text-align: left;
+    letter-spacing: 0.1em;
 }
 
 /* default theme */
