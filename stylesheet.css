@@ -54,20 +54,27 @@ img[src$="logo-svg.svg"] {
     text-decoration: underline;
 }
 
-*#navigation li {
+ul.navigation {
     font-size: 20px;
     text-align: center;
     display: inline-flex;
-    background-position: 100% .2em;
-    padding-left: 1.4em;
-    padding-right: 1.4em;
+    list-style-type: none;
+    overflow: hidden;
+    padding-left: 10%;
+    padding-right: 10%;
 }
-*#navigation li.home {
-    padding-left: .3em;
+li.navigation {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-decoration: none;
 }
-*#navigation li.features {
-    padding-left: 1.35em;
-    padding-right: .525em;
+
+*.active {
+    text-decoration: bold;
+    color: #FFE000;
 }
 
 footer {
@@ -105,8 +112,6 @@ p {
 .lighter-background {
     background-color: #f1f1f1;
     color: rgb(33, 33, 33);
-    padding-top: 16px;
-    padding-bottom: 16px;
 }
 header.lighter-background {
     padding-top: 1px;
@@ -154,6 +159,8 @@ button {
     cursor: pointer;
     font-size: 20px;
     display: table-cell;
+    text-align: center;
+    vertical-align: center;
 }
 button#download-btn-curseforge {
     background-color: purple;
@@ -162,8 +169,4 @@ button#download-btn-curseforge {
 button#download-btn-github {
     background-color: rgb(70, 70, 70);
     padding: 12px 30px;
-}
-button#theme-btn {
-    background-color: rgb(70, 70, 70);
-    padding: 8px 17px;
 }

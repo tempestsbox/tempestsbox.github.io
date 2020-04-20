@@ -1,6 +1,6 @@
 ---
 title: 'Contributors'
-layout: page/contributors
+layout: default
 permalink: /contributors
 ---
 

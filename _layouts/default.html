@@ -12,11 +12,13 @@
 
     <body>
         <header class='lighter-background'>
-            <a href={{ site.url }}> <h3> {{ site.title }} </h3> </a></li>
+            <a href={{ site.url }}> <h3> {{ site.title }} </h3> </a>
         </header>
 
         <div id='content'>
-            {{ content }}
+            {% include navigation.html %}
+            <br class='smaller'>
+            <p>{{ content }}</p>
             <br>
         </div>
 

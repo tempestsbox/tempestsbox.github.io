@@ -1,7 +1,8 @@
 ---
 title: 'Features'
-layout: page/features
+layout: default
 permalink: /features
+navigation_weight: 2
 ---
 
 The Tempest's Box adds countless features that add to the game, providing you with many new items, blocks, entities, and more!

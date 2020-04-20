@@ -1,6 +1,7 @@
 ---
 title: 'Home'
-layout: page/home
+layout: default
+navigation_weight: 1
 ---
 
 A rebirth of Zoey's TTB for 1.16+, to install into your vanilla survival world.  

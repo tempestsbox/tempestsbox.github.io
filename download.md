@@ -1,10 +1,9 @@
 ---
 title: 'Download'
-layout: page/download
+layout: default
 permalink: /download
+navigation_weight: 3
 ---
-
-<div><br class='smaller'><br class='smaller'></div>
 
 {% include download_buttons.html %}
 
