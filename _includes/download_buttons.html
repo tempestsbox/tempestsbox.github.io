@@ -13,7 +13,7 @@
     </a>
     <script>
         const repo = '{{ site.github-repo }}'
-        const prefix_sources = '<i class=\'fa fa-download\'></i> Direct Download ('
+        const prefix_sources = '<i class=\'fab fa-github\'></i> Direct Download ('
 
         async function fetchButtonData() {
             let response = await fetch('https://api.github.com/repos/' + repo + '/releases')
