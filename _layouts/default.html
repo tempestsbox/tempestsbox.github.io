@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{{ page.title }} | {{ site.title }}</title>
-        <meta name="description" content="{{ site.description }}" />
-        <link rel="stylesheet" href="{{ site.url }}/stylesheet.css" />
-        <link rel="icon" type="image/png" href="{{ site.url }}/assets/logos/ttb/128x.png" />
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <body>
-        <header class='lighter-background'>
-            <a href={{ site.url }}> <h3> {{ site.title }} </h3> </a>
-        </header>
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="description" content="{{ page.description }}" />
+    <link rel="stylesheet" href="/assets/stylesheet.css" />
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+</head>
 
-        <div id='content'>
-            {% include navigation.html %}
-            <br class='smaller'>
-            <p>{{ content }}</p>
-            <br>
-        </div>
+<body>
+    <header class='lighter-background'>
+        <a href=>
+            <h3> {{ site.title }} </h3>
+        </a>
+        {% include navigation.html %}
+    </header>
 
-        {% include footer.html %}
+    <div id='content'>
+        <p>{{ content }}</p>
+        <br>
+        <br>
+    </div>
 
-        <!-- <script>            
-            function toggleTheme() {
-                var element = document.body;
-                element.classList.toggle("inverted");
-            }
-        </script> -->
-    </body>
+    {% include footer.html %}
+</body>
+
 </html>

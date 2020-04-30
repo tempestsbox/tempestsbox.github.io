@@ -54,22 +54,14 @@ img[src$="logo-svg.svg"] {
     text-decoration: underline;
 }
 
-ul.navigation {
+nav {
     font-size: 20px;
     text-align: center;
-    display: inline-flex;
-    list-style-type: none;
-    overflow: hidden;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-li.navigation {
-    display: block;
-    color: white;
-    text-align: center;
-    padding-left: 16px;
-    padding-right: 16px;
     text-decoration: none;
+    list-style-type: none;
+    font-weight: normal;
+    line-height: normal;
+    margin-bottom: 15px;
 }
 
 *.active {

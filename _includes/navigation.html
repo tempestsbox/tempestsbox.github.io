@@ -1,16 +1,10 @@
-<nav class="main-nav">
-    <ul class='navigation'>
-        {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
-        {% for p in navigation_pages %}
-        {% if p.navigation_weight %}
-        <li class='navigation'>
-            <a href="{{ p.url }}" {% if p.url == page.url %}class="active" {% endif %}>
-                {{ p.title }}
-            </a>
-        </li>
-        {% endif %}
-        {% endfor %}
-    </ul>
-</nav>
-
 <hr class='lighter-background'>
+
+<nav>
+    {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
+    {% for p in navigation_pages %}
+    {% if p.navigation_weight %}
+        <a href='{{ p.url }}' {% if p.url == page.url %}style='font-weight: bold; margin-left: 6px; margin-right: 6px;' {% else %}style='margin-left: 6px; margin-right: 6px;'{% endif %}>{{ p.title }}</a>
+    {% endif %}
+    {% endfor %}
+</nav>
