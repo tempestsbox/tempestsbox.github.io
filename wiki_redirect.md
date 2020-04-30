@@ -1,7 +1,7 @@
 ---
 title: 'Wiki'
 permalink: /wiki
-navigation_weight: 2
+navigation_weight: 1
 ---
 
 <meta charset="utf-8">
