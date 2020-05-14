@@ -1,7 +1,8 @@
 ---
 title: 'Wiki'
 permalink: /wiki
-navigation_weight: 1
+prefix-icon: 'fas fa-book'
+navigation_weight: 2
 ---
 
 <meta charset="utf-8">

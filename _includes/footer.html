@@ -1,46 +1,28 @@
-<div id='footer' class='lighter-background'>
-    <footer class='lighter-background'>
-        <div>
-            <!-- patreon -->
-            <a href="https://patreon.com/{{ site.patreon }}">
-                <i class='fab fa-patreon footer-icons'></i></a>‏‏‎ ‎
-            <!-- reddit -->
-            <a href="https://reddit.com/r/{{ site.reddit }}">
-                <i class='fab fa-reddit footer-icons'></i></a>‏‏‎ ‎
-            <!-- github -->
-            <a href="https://github.com/{{ site.github-repo }}">
-                <i class='fab fa-github footer-icons'></i></a>‏‏‎ ‎
-            <!-- discord -->
-            <a href="https://discord.gg/{{ site.discord }}">
-                <i class='fab fa-discord footer-icons'></i></a>‏‏‎ ‎
-            <!-- download -->
-            <a href="/download">
-                <i class='fas fa-download footer-icons'></i></a>‏‏‎ ‎
-            <!-- youtube -->
-            <a href="https://youtube.com/{{ site.youtube }}">
-                <i class='fab fa-youtube footer-icons'></i></a>‏‏‎ ‎
-        </div>
+<footer>
+    <nav>
+        <!-- patreon -->
+        <a class="footer-link" href="https://patreon.com/{{ site.patreon }}">
+            <i class='fab fa-patreon'></i></a>‏‏‎ ‎
+        <!-- reddit -->
+        <a class="footer-link" href="https://reddit.com/r/{{ site.reddit }}">
+            <i class='fab fa-reddit'></i></a>‏‏‎ ‎
+        <!-- github -->
+        <a class="footer-link" href="https://github.com/{{ site.github-repo }}">
+            <i class='fab fa-github'></i></a>‏‏‎ ‎
+        <!-- discord -->
+        <a class="footer-link" href="https://discord.gg/{{ site.discord }}">
+            <i class='fab fa-discord'></i></a>‏‏‎ ‎
+        <!-- download -->
+        <a class="footer-link" href="/download">
+            <i class='fas fa-download'></i></a>‏‏‎ ‎
+        <!-- youtube -->
+        <a class="footer-link" href="https://youtube.com/{{ site.youtube }}">
+            <i class='fab fa-youtube'></i></a>‏‏‎ ‎
+    </nav>
 
-        <br>
-        <br>
-        <br>
-
-        <p class='copyright' id='copyright'> Loading date... </p>
-        <script>
-            document.getElementById('copyright').innerHTML = '© ' + new Date().getFullYear() + ' <a href=>{{ site.title }}</a>';
-        </script>
-    </footer>
-</div>
-
-    <!-- <br>
-
-<div style='text-align: center;'>
-    <button id='theme-btn' onclick='toggleTheme()'>
-        Toggle Theme
-    </button>
+    <p class='copyright' id='copyright'> Loading date... </p>
     <script>
-        function toggleTheme() {
-            document.getElements
-        }
+        document.getElementById('copyright').innerHTML = '<a class="footer-link" href=>© ' + new Date().getFullYear() + ' {{ site.title }}</a>';
     </script>
-</div> -->
+    <br>
+</footer>

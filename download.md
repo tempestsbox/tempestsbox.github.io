@@ -1,8 +1,9 @@
 ---
-title: 'Download'
+title: ' Download'
 layout: default
 permalink: /download
-navigation_weight: 3
+prefix-icon: 'fa fa-download'
+navigation_weight: 1
 ---
 
 ## Installation Instructions
@@ -12,13 +13,13 @@ If you don't know where your Minecraft files are stored, [click here](https://he
 {% include download_buttons.html %}
 
 ## Contributors
-\- [Andante]({{ site.url }}/contributors#Andante) -  
-\- [Qbert]({{ site.url }}/contributors#Qbert) -  
-\- [iNkoR_the_2nd]({{ site.url }}/contributors#iNkoR_the_2nd) -  
-\- [DarkMagicSauce]({{ site.url }}/contributors#DarkMagicSauce) -  
-\- [Ninja_Man_0722]({{ site.url }}/contributors#Ninja_Man_0722) -  
-\- [TheNuclearNexus]({{ site.url }}/contributors#TheNuclearNexus) -  
-\- [Trog]({{ site.url }}/contributors#Trog) -
+- [Andante]({{ site.url }}/contributors#Andante) Lead developer
+- [DarkMagicSauce]({{ site.url }}/contributors#DarkMagicSauce) Started the project
+- [TheNuclearNexus]({{ site.url }}/contributors#TheNuclearNexus)
+- *[Qbert]({{ site.url }}/contributors#Qbert) Graphic Designer*
+- *[iNkoR_the_2nd]({{ site.url }}/contributors#iNkoR_the_2nd)*
+- *[Ninja_Man_0722]({{ site.url }}/contributors#Ninja_Man_0722)*
+- *[Trog]({{ site.url }}/contributors#Trog)*
 
 <div><hr class='separator'></div>
 

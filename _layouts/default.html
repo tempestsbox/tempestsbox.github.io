@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
@@ -12,18 +12,16 @@
 </head>
 
 <body>
-    <header class='lighter-background'>
-        <a href=><h3> {{ site.title }} </h3></a>
-        {% include navigation.html %}
-    </header>
+    {% include header.html %}
 
-    <div id='content'>
-        <p>{{ content }}</p>
-        <br>
-        <br>
+    <div id="wrapper">
+        <div class="page-content">
+            {{ content }}
+        </div>
     </div>
 
     {% include footer.html %}
+    <br>
 </body>
 
 </html>

@@ -1,12 +1,18 @@
 ---
-title: 'Home'
+title: 'About'
 layout: default
-navigation_weight: 2
+prefix-icon: 'fas fa-user-circle'
+navigation_weight: 0
 ---
 
-<div><br class='smaller'></div>
+<section class="intro">
+    <img class="avatar" src="/assets/favicon.png" alt="JellySquid's avatar">
 
-A rebirth of Zoey's TTB for 1.16+, to install into your vanilla survival world.  
-The Tempest's Box adds countless features that add to the game, providing you with many new items, blocks, entities, and more!
-
-{% include download_buttons.html %}
+    <h2>The Tempest's Box</h2>
+    <p>The Tempest's Box adds countless features that add to the game, providing you with many new items, blocks,
+        entities,
+        structures, and more! <br><br>
+        This project is an update of <a href="/faq#Who-is-Zoey?">Zoey's</a> TTB for 1.16+, and, just like classic TTB,
+        we want you as involved as possible with
+        the project!</p>
+</section>
