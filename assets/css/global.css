@@ -218,7 +218,6 @@ template {
 .portfolio-list a.bubble:focus .inner,.portfolio-list a.bubble:hover .inner {
     opacity: .35;
     transition: opacity .5s,transform .5s;
-    transform: scale(1.1);
 }
 .portfolio-list a.bubble .inner {
     opacity: 1;
