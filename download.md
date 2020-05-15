@@ -1,5 +1,5 @@
 ---
-title: ' Download'
+title: 'Download'
 layout: default
 permalink: /download
 prefix-icon: 'fa fa-download'
