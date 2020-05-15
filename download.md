@@ -24,6 +24,6 @@ If you don't know where your Minecraft files are stored, [click here](https://he
 <div><hr class='separator'></div>
 
 ## License
-This project is covered by the [GPL-3.0 License](https://github.com/{{ site.github-repo }}/blob/master/LICENSE).
+This project is covered by the [GPL-3.0 License](https://github.com/{{ site.github-repo }}/blob/ver/1.16/LICENSE).
 
 <div><hr class='separator'></div>
