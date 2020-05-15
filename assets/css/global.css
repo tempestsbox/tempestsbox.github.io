@@ -198,6 +198,7 @@ template {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: none;
 }
 .portfolio-list a.bubble::after {
     position: absolute;
@@ -359,4 +360,10 @@ button#download-btn-github {
           -ms-user-select: none; /* Internet Explorer/Edge */
               user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }

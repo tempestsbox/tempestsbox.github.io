@@ -1,9 +1,1 @@
-<nav id="navbar">{% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}{% for p in navigation_pages %}{% if p.navigation_weight %}
-        <a class="link item{% if p.url == page.url %} active{% endif %}" href="{{ p.url }}"><i class="{{ p.prefix-icon }}"></i><span>{{ p.title }}</span></a>{% endif %}{% endfor %}
-    </nav>
-
-<!-- <nav>
-    <a class="link item active" href="/"><i class="fas fa-user-circle"></i><span>About</span></a>
-    <a class="link item" href="/portfolio"><i class="fas fa-box-open"></i><span>Portfolio</span></a>
-    <a class="link item" href="/contact"><i class="fas fa-envelope-open"></i><span>Contact</span></a>
-</nav> -->
+{% include navigation.html %}

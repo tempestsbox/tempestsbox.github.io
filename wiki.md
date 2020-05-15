@@ -1,12 +1,9 @@
 ---
-title: 'Wiki'
+title: "Wiki"
 layout: default
 permalink: /wiki
-prefix-icon: 'fas fa-book'
+prefix-icon: "fas fa-book"
 navigation_weight: 2
 ---
 
-<!-- <meta charset="utf-8">
-<title>Redirecting to https://github.com/{{ site.github-repo }}/wiki</title>
-<meta http-equiv="refresh" content="0; URL=https://github.com/{{ site.github-repo }}/wiki">
-<link rel="canonical" href="https://github.com/{{ site.github-repo }}/wiki"> -->
+{% include wiki_widget.html id="tempest-crafter" title="Tempest Crafter" description="The Tempest Crafter is perhaps the most important block in all of TTB. It is used to craft machines, staffs, spirit gems, and much more!" tags="Block" image-path="tempest_crafter-craft.gif" %}

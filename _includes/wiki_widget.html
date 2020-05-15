@@ -1,0 +1,13 @@
+<div class="portfolio-list">
+    <div class="item">
+        {% if include.new %} <h3 class="date">New in {{ include.new }}!</h3>{% endif %}
+        <h3 class="title">{{ include.title }}</h3>
+        <h5 class="subtitle">{{ include.tags }}</h5><a class="bubble"
+            href="{{ site.url }}/wiki/{{ include.id }}" rel="noopener noreferrer">
+            <picture>
+                <img class="inner" src="/assets/docs/{{ include.image-path }}" alt="docs/{{ include.image-path }}" width=320 height=180>
+            </picture>
+        </a>
+        <p class="small">{{ include.description }}</p>
+    </div>
+</div>

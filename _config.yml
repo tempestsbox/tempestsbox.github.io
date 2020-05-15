@@ -1,3 +1,8 @@
+collections:
+  wiki:
+    output: true
+    permalink: /:collection/:path
+
 title: "The Tempest's Box"
 description: "An update of Zoey's TTB for 1.16+"
 
