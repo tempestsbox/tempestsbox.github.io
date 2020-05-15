@@ -134,14 +134,6 @@ template {
     width: 100%;
     display: flex;
     justify-content: center;
-
-    -webkit-touch-callout: none; /* iOS Safari */
-      -webkit-user-select: none; /* Safari */
-       -khtml-user-select: none; /* Konqueror HTML */
-         -moz-user-select: none; /* Old versions of Firefox */
-          -ms-user-select: none; /* Internet Explorer/Edge */
-              user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */;
 }
 #navbar .item {
     font-weight: 700;
@@ -308,18 +300,14 @@ body {
     background: #141414;
     color: #ddd;
 }
+header {
+    background: #0a0a0a;
+    width: 100%;
+}
 footer {
     font-size: 1em;
     color: #888;
     line-height: .6em;
-
-    -webkit-touch-callout: none; /* iOS Safari */
-      -webkit-user-select: none; /* Safari */
-       -khtml-user-select: none; /* Konqueror HTML */
-         -moz-user-select: none; /* Old versions of Firefox */
-          -ms-user-select: none; /* Internet Explorer/Edge */
-              user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */;
 }
 .footer-link {
     border-bottom: none;
@@ -361,4 +349,14 @@ button#download-btn-curseforge {
 button#download-btn-github {
     background-color: rgb(70, 70, 70);
     padding: 12px 30px;
+}
+
+.no-highlight {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */;
 }
