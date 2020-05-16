@@ -367,6 +367,12 @@ button#download-btn-github {
               user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */;
 }
+br::selection {
+    background: transparent;
+}
+br::-moz-selection {
+    background: transparent;
+}
 .center {
     display: block;
     margin-left: auto;
