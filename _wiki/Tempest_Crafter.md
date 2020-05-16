@@ -7,3 +7,6 @@ description: "The Tempest Crafter is perhaps the most important block in all of 
 tags: "Block"
 image-path: "tempest_crafter-craft.gif"
 ---
+
+## Usage
+Right click the Tempest Crafter to open the crafting GUI. Here, you can craft custom items from The Tempest's Box.
