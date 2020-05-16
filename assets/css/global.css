@@ -64,6 +64,10 @@ sup {
 img {
     border-style: none;
 }
+img.smaller {
+    width: 640px;
+    height: 360px;
+}
 button,input,optgroup,select,textarea {
     font-family: inherit;
     font-size: 100%;
@@ -179,34 +183,34 @@ template {
 .portfolio {
     text-align: center;
 }
-.portfolio-list {
+.frequents-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     text-align: left;
 }
-.portfolio-list .item {
+.frequents-list .item {
     max-width: 320px;
     margin: 20px;
 }
-.portfolio-list .bubble {
+.frequents-list .bubble {
     margin: 12px 0;
     width: 320px;
     height: 180px;
 }
-.portfolio-list .bubble img {
+.frequents-list .bubble img {
     width: 320px;
     height: 180px;
 }
-.portfolio-list a.bubble {
+.frequents-list a.bubble {
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: none;
 }
-.portfolio-list a.bubble::after {
+.frequents-list a.bubble::after {
     position: absolute;
     display: block;
     color: #fff;
@@ -216,43 +220,43 @@ template {
     opacity: 0;
     transition: opacity .3s;
 }
-.portfolio-list a.bubble:focus::after,.portfolio-list a.bubble:hover::after {
+.frequents-list a.bubble:focus::after,.frequents-list a.bubble:hover::after {
     opacity: 1;
     transition: opacity .3s;
     transition-delay: .1s;
 }
-.portfolio-list a.bubble:focus .inner,.portfolio-list a.bubble:hover .inner {
+.frequents-list a.bubble:focus .inner,.frequents-list a.bubble:hover .inner {
     opacity: .35;
     transition: opacity .5s,transform .5s;
     transform: scale(1.1);
 }
-.portfolio-list a.bubble .inner {
+.frequents-list a.bubble .inner {
     opacity: 1;
     transition: opacity .5s,transform .5s;
 }
-.portfolio-list .bubble {
+.frequents-list .bubble {
     background: #111;
     border-radius: 3px;
     width: 320px;
     height: 180px;
     overflow: hidden;
 }
-.portfolio-list h3,.portfolio-list h4,.portfolio-list h5 {
+.frequents-list h3,.frequents-list h4,.frequents-list h5 {
     margin: 0;
 }
-.portfolio-list .subtitle {
+.frequents-list .subtitle {
     font-size: .6em;
     color: #bbb;
     line-height: 1.4em;
     font-weight: 400;
     margin-top: 0;
 }
-.portfolio-list .small {
+.frequents-list .small {
     font-size: .7em;
     color: #bbb;
     line-height: 1.4em;
 }
-.portfolio-list .date {
+.frequents-list .date {
     color: #999;
 }
 .intro .avatar {
@@ -378,4 +382,7 @@ br::-moz-selection {
     margin-left: auto;
     margin-right: auto;
     width: 75%;
+}
+.push-down {
+    border-top: solid transparent 1.8em;
 }

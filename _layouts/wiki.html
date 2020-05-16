@@ -2,7 +2,15 @@
 layout: default
 ---
 
-{% include wiki_prefix.html title=page.title image-path=page.image-path description=page.description %}
+<h1 style="text-align: center;">{{ page.title }}</h1>
+
+<hr>
+
+<img class="center" src="/assets/docs/{{ page.image-path }}" alt="docs/{{ page.image-path }}">
+
+<br>
+
+{{ page.description }} {{ page.extra_description }}
 
 <br><br>
 
