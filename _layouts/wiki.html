@@ -4,6 +4,13 @@ layout: default
 
 {% include wiki_prefix.html title=page.title image-path=page.image-path description=page.description %}
 
-<br>
+<br><br>
 
 {{ content }}
+
+<br>
+
+<h2>Issues</h2>
+<li>
+    <a href="https://github.com/{{ site.github-repo }}/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+{{ page.title }}">Open issues relating to '{{ page.title }}'</a>
+</li>
