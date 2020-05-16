@@ -1,7 +1,6 @@
 ---
 title: 'Contributors'
 layout: default
-permalink: /contributors
 ---
 
 ## Lead Devs

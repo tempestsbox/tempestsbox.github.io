@@ -1,7 +1,6 @@
 ---
 title: 'Download'
 layout: default
-permalink: /download
 prefix-icon: 'fa fa-download'
 navigation_weight: 1
 ---

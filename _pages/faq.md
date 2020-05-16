@@ -1,7 +1,6 @@
 ---
 title: 'Frequently Asked Questions'
 layout: default
-permalink: /faq
 ---
 
 # {{ page.title }}

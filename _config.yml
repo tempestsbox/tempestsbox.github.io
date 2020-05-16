@@ -2,6 +2,9 @@ collections:
   wiki:
     output: true
     permalink: /:collection/:path
+  pages:
+    output: true
+    permalink: /:path
 
 title: "The Tempest's Box"
 description: "An update of Zoey's TTB for 1.16+"
