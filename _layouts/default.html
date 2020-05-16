@@ -2,11 +2,17 @@
 <html lang="en">
 
 <head>
+    <title>{{ page.title }} | {{ site.title }}</title>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>{{ page.title }} | {{ site.title }}</title>
     <meta name="description" content="{{ page.description }}" />
+    
+    {% if page.image-path %}
+        <meta property="og:image" content="/assets/docs/{{ page.image-path }}" />
+    {% endif %}
+    <meta property="og:type" content="website" />
+
     <link rel="stylesheet" href="/assets/css/global.css" />
     <link rel="icon" type="image/png" href="/assets/favicon.png" />
 </head>
