@@ -322,7 +322,7 @@ footer {
     color: #888;
     line-height: .6em;
 }
-.footer-link {
+.footer-link, .anchorjs-link {
     border-bottom: none;
 }
 body,html {
