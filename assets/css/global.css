@@ -386,6 +386,38 @@ br::-moz-selection {
     width: 75%;
     text-align: center;
 }
+img.center {
+    margin-left: 3.7em;
+}
 .push-down {
     border-top: solid transparent 1.8em;
+}
+.square-list {
+    list-style: square;
+}
+.sprite {
+    width: 16px;
+    height: 16px;
+    float: left;
+}
+table, td, th {
+    margin: 1em 0;
+    border: 1px solid #a2a9b1;
+    border-collapse: collapse;
+}
+td.breaking-drop-yes {
+    background-color: #C6EFCE;
+    color: #006100;
+}
+td.breaking-drop-no {
+    background-color: #FFC7CE;
+    color: #9C0006;
+}
+img.wikitable-block {
+    margin-top: .35em;
+    margin-left: .35em;
+    margin-right: .35em;
+}
+img.wikitable-item {
+    margin-left: 3.96em;
 }
