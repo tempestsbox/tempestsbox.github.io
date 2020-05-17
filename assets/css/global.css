@@ -65,8 +65,12 @@ img {
     border-style: none;
 }
 img.smaller {
-    width: 640px;
-    height: 360px;
+    width: 60%;
+    height: 60%;
+}
+img.border {
+    border: solid rgb(86, 101, 115) .1em;
+    /* border-radius: .3em; */
 }
 button,input,optgroup,select,textarea {
     font-family: inherit;
@@ -382,6 +386,7 @@ br::-moz-selection {
     margin-left: auto;
     margin-right: auto;
     width: 75%;
+    text-align: center;
 }
 .push-down {
     border-top: solid transparent 1.8em;

@@ -11,5 +11,4 @@ tags: "Block, Machine"
 image-path: "tempite_stone.png"
 ---
 
-<img class="no-highlight smaller center" src="/assets/docs/tempite_stone-redstone_power.gif" alt="tempite_stone-redstone_power.gif">
-<code class="center">A Tempite Stone getting powered without any Tempite (semi-powered)</code>
+{% include fig.html src="/assets/docs/tempite_stone-redstone_power.gif" alt="tempite_stone-redstone_power.gif" caption="A Tempite Stone getting powered without any Tempite<br>(semi-powered)" %}
