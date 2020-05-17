@@ -65,12 +65,10 @@ img {
     border-style: none;
 }
 img.smaller {
-    width: 60%;
-    height: 60%;
+    scale: 75%;
 }
 img.border {
     border: solid rgb(86, 101, 115) .1em;
-    /* border-radius: .3em; */
 }
 button,input,optgroup,select,textarea {
     font-family: inherit;
@@ -187,34 +185,34 @@ template {
 .portfolio {
     text-align: center;
 }
-.frequents-list {
+.two-grid {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     text-align: left;
 }
-.frequents-list .item {
+.two-grid .item {
     max-width: 320px;
     margin: 20px;
 }
-.frequents-list .bubble {
+.two-grid .bubble {
     margin: 12px 0;
     width: 320px;
     height: 180px;
 }
-.frequents-list .bubble img {
+.two-grid .bubble img {
     width: 320px;
     height: 180px;
 }
-.frequents-list a.bubble {
+.two-grid a.bubble {
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: none;
 }
-.frequents-list a.bubble::after {
+.two-grid a.bubble::after {
     position: absolute;
     display: block;
     color: #fff;
@@ -224,43 +222,43 @@ template {
     opacity: 0;
     transition: opacity .3s;
 }
-.frequents-list a.bubble:focus::after,.frequents-list a.bubble:hover::after {
+.two-grid a.bubble:focus::after,.two-grid a.bubble:hover::after {
     opacity: 1;
     transition: opacity .3s;
     transition-delay: .1s;
 }
-.frequents-list a.bubble:focus .inner,.frequents-list a.bubble:hover .inner {
+.two-grid a.bubble:focus .inner,.two-grid a.bubble:hover .inner {
     opacity: .35;
     transition: opacity .5s,transform .5s;
     transform: scale(1.1);
 }
-.frequents-list a.bubble .inner {
+.two-grid a.bubble .inner {
     opacity: 1;
     transition: opacity .5s,transform .5s;
 }
-.frequents-list .bubble {
+.two-grid .bubble {
     background: #111;
     border-radius: 3px;
     width: 320px;
     height: 180px;
     overflow: hidden;
 }
-.frequents-list h3,.frequents-list h4,.frequents-list h5 {
+.two-grid h3,.two-grid h4,.two-grid h5 {
     margin: 0;
 }
-.frequents-list .subtitle {
+.two-grid .subtitle {
     font-size: .6em;
     color: #bbb;
     line-height: 1.4em;
     font-weight: 400;
     margin-top: 0;
 }
-.frequents-list .small {
+.two-grid .small {
     font-size: .7em;
     color: #bbb;
     line-height: 1.4em;
 }
-.frequents-list .date {
+.two-grid .date {
     color: #999;
 }
 .intro .avatar {
