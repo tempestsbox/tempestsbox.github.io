@@ -345,10 +345,6 @@ hr {
     border-top: 1px solid #444;
     margin: 40px 0;
 }
-
-div#download-button {
-    text-align: center;
-}
 button {
     border: none;
     color: white;
@@ -358,13 +354,47 @@ button {
     text-align: center;
     vertical-align: center;
 }
-button#download-btn-curseforge {
-    background-color: purple;
+button:focus {
+    outline: 0 !important;
+}
+div#download-button {
+    text-align: center;
+}
+button.download-btn, button.download-coll {
     padding: 12px 30px;
 }
-button#download-btn-github {
+button.download-btn#curseforge {
+    background-color: purple;
+}
+button.download-btn#github {
     background-color: rgb(70, 70, 70);
+}
+button.download-coll#classic {
+    background-color: rgba(70, 70, 70, 0.5);
+}
+button.download-btn#classic {
+    background-color: rgb(51, 51, 51);
+}
+button.collapsible {
+    border-left: solid rgb(107, 107, 107) .2em;
+    transition: border-left 0.2s ease-out;
+}
+button.collapsible-active {
+    border-left: solid rgb(107, 107, 107) .4em;
+}
+div.collapsible-content {
+    justify-content: left;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-top: 1em;
+}
+div.collapsible-content a button.download-btn#classic {
+    background-color: rgb(41, 41, 41);
+    margin-bottom: .5em;
+    font-size: .9em;
     padding: 12px 30px;
+    border-bottom: dotted 1px #aaa;
 }
 
 .no-highlight {

@@ -1,41 +1,56 @@
-<div id='download-button'>
-    <hr class='separator'>
+<div id="download-button">
+    <hr class="separator">
 
-    <a href='https://curseforge.com/{{ site.curseforge-link }}'>
-        <button id='download-btn-curseforge'>
-            <i class='fa fa-download'></i> Download (CurseForge) </button>
+    <a href="https://curseforge.com/{{ site.curseforge-link }}">
+        <button class="download-btn" id="curseforge">
+            <i class="fa fa-download"></i> Download (CurseForge) </button>
     </a>
 
     <br>
     <br>
 
-    <a id='download-btn-github-link'>
-        <button id='download-btn-github'>
-            <i class='fab fa-github'></i> Loading version... </button>
+    <a class="download-btn" id="github-link">
+        <button class="download-btn" id="github">
+            <i class="fab fa-github"></i> Loading version... </button>
     </a>
+
+    <script src="/assets/js/downloadButtons.js"></script>
     <script>
-        const repo = '{{ site.github-repo }}'
-        const prefix_sources = '<i class=\'fab fa-github\'></i> Direct Download ('
-
-        async function fetchButtonData() {
-            let response = await fetch('https://api.github.com/repos/' + repo + '/releases')
-            let data = await response.json()
-            if (data[0]) {
-                updateButton(data[0].tag_name)
-                return
-            }
-            response = await fetch('https://api.github.com/repos/' + repo)
-            data = await response.json()
-            updateButton(data.default_branch)
-        }
-
-        function updateButton(archive) {
-            document.getElementById('download-btn-github').innerHTML = prefix_sources + archive + ')';
-            document.getElementById('download-btn-github-link').href = 'https://github.com/' + repo + '/archive/' + archive + '.zip';
-        }
-
-        fetchButtonData();
+        fetchGitHubArchive("{{ site.github-user }}/{{ site.github-repo }}");
     </script>
 
-    <hr class='separator'>
+    <br>
+    <br>
+
+    <button type="button" class="download-coll collapsible" id="classic"><i class="fas fa-clock"></i> Classic Versions </button>
+    <div id="download-coll-classic-content" class="collapsible-content">
+        <a id="download-coll-classic-link" href="https://github.com/{{ site.github-user }}/{{ site.github-repo-classic }}/archive/0.7.zip">
+            <button class="download-btn" id="classic"> Classic v0.7 </button>
+        </a>
+
+        <br>
+
+        <a id="download-coll-classic-link" href="https://github.com/{{ site.github-user }}/{{ site.github-repo-classic }}/archive/0.8.zip">
+            <button class="download-btn" id="classic"> Classic v0.8 (Beta) </button>
+        </a>
+    </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("collapsible-active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+            content.style.maxHeight = null;
+            } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            } 
+        });
+        }
+    </script>
+
+    <hr class="separator">
 </div>
