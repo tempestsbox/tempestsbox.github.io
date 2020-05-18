@@ -185,34 +185,34 @@ template {
 .portfolio {
     text-align: center;
 }
-.two-grid {
+div.two-grid {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     text-align: left;
 }
-.two-grid .item {
+div.two-grid .item {
     max-width: 320px;
     margin: 20px;
 }
-.two-grid .bubble {
+div.two-grid a.bubble {
     margin: 12px 0;
     width: 320px;
     height: 180px;
 }
-.two-grid .bubble img {
+div.two-grid a.bubble img {
     width: 320px;
     height: 180px;
 }
-.two-grid a.bubble {
+div.two-grid a.bubble {
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: none;
 }
-.two-grid a.bubble::after {
+div.two-grid a.bubble::after {
     position: absolute;
     display: block;
     color: #fff;
@@ -222,43 +222,43 @@ template {
     opacity: 0;
     transition: opacity .3s;
 }
-.two-grid a.bubble:focus::after,.two-grid a.bubble:hover::after {
+div.two-grid a.bubble:focus::after,div.two-grid a.bubble:hover::after {
     opacity: 1;
     transition: opacity .3s;
     transition-delay: .1s;
 }
-.two-grid a.bubble:focus .inner,.two-grid a.bubble:hover .inner {
+div.two-grid a.bubble:focus .inner,div.two-grid a.bubble:hover .inner {
     opacity: .35;
     transition: opacity .5s,transform .5s;
     transform: scale(1.1);
 }
-.two-grid a.bubble .inner {
+div.two-grid a.bubble .inner {
     opacity: 1;
     transition: opacity .5s,transform .5s;
 }
-.two-grid .bubble {
+div.two-grid a.bubble {
     background: #111;
     border-radius: 3px;
     width: 320px;
     height: 180px;
     overflow: hidden;
 }
-.two-grid h3,.two-grid h4,.two-grid h5 {
+div.two-grid h3,.two-grid h4,.two-grid h5 {
     margin: 0;
 }
-.two-grid .subtitle {
+div.two-grid .two-grid#subtitle {
     font-size: .6em;
     color: #bbb;
     line-height: 1.4em;
     font-weight: 400;
     margin-top: 0;
 }
-.two-grid .small {
+div.two-grid .two-grid#description {
     font-size: .7em;
     color: #bbb;
     line-height: 1.4em;
 }
-.two-grid .date {
+div.two-grid .two-grid#new {
     color: #999;
 }
 .intro .avatar {
