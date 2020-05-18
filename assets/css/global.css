@@ -363,6 +363,7 @@ div#download-button {
 div#download-coll-installation-content.active {
     background-color: rgba(31, 135, 161, 30%);
     border: solid rgb(70, 70, 70) .1em;
+    margin-bottom: 1em;
 }
 button.download-btn, button.download-coll {
     padding: 12px 30px;
