@@ -360,6 +360,10 @@ button:focus {
 div#download-button {
     text-align: center;
 }
+div#download-coll-installation-content.active {
+    background-color: rgba(31, 135, 161, 30%);
+    border: solid rgb(70, 70, 70) .1em;
+}
 button.download-btn, button.download-coll {
     padding: 12px 30px;
 }
@@ -374,6 +378,16 @@ button.download-coll#classic {
 }
 button.download-btn#classic {
     background-color: rgb(51, 51, 51);
+}
+button#installation {
+    background-color: rgb(31, 135, 161);
+}
+button#installation.collapsible {
+    border-left: solid rgb(118, 176, 190) .2em;
+    transition: border-left 0.2s ease-out;
+}
+button#installation.collapsible-active {
+    border-left: solid rgb(118, 176, 190) .4em;
 }
 button.collapsible {
     border-left: solid rgb(107, 107, 107) .2em;
