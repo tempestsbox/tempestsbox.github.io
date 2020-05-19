@@ -224,21 +224,21 @@ a.bubble::after {
     font-size: 2em;
     content: "\f35d";
     opacity: 0;
-    transition: opacity .3s;
+    transition: all .3s;
 }
 a.bubble:focus::after,a.bubble:hover::after {
     opacity: 1;
-    transition: opacity .3s;
+    transition: all .3s;
     transition-delay: .1s;
 }
 a.bubble:focus .inner,a.bubble:hover .inner {
     opacity: .35;
-    transition: opacity .5s,transform .5s;
+    transition: all .5s,transform .5s;
     transform: scale(1.1);
 }
 a.bubble .inner {
     opacity: 1;
-    transition: opacity .5s,transform .5s;
+    transition: all .5s,transform .5s;
 }
 a.bubble {
     background: #111;
@@ -292,10 +292,10 @@ div.two-grid h3,.two-grid h4,.two-grid h5 {
     font-weight: 700;
     transition: all .2s ease;
 }
-:any-link.anchorjs-link {
+.anchorjs-link, .no-underline {
     border-bottom: none;
 }
-:any-link:hover:not(.bubble, .anchorjs-link) {
+:any-link:hover:not(.bubble):not(.anchorjs-link):not(.no-underline) {
     color: #fff;
     border-bottom: solid 1px #fff;
 }
@@ -373,6 +373,7 @@ div#download-coll-installation-content.active {
 }
 button.download-btn, button.download-coll {
     padding: 12px 30px;
+    transition: all 0.2s ease;
 }
 button.download-btn#curseforge {
     background-color: purple;
@@ -391,14 +392,13 @@ button#installation {
 }
 button#installation.collapsible {
     border-left: solid rgb(118, 176, 190) .2em;
-    transition: border-left 0.2s ease-out;
+    transition: all 0.2s ease;
 }
 button#installation.collapsible-active {
     border-left: solid rgb(118, 176, 190) .4em;
 }
 button.collapsible {
     border-left: solid rgb(107, 107, 107) .2em;
-    transition: border-left 0.2s ease-out;
 }
 button.collapsible-active {
     border-left: solid rgb(107, 107, 107) .4em;
@@ -407,15 +407,17 @@ div.collapsible-content {
     justify-content: left;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: all 0.2s ease;
     margin-top: 1em;
 }
 div.collapsible-content a button.download-btn#classic {
     background-color: rgb(41, 41, 41);
     margin-bottom: .5em;
     font-size: .9em;
-    padding: 12px 30px;
     border-bottom: dotted 1px #aaa;
+}
+button.download-btn:hover, button.download-coll:hover, button.download-btn#classic:hover {
+    padding: 12px 40px;
 }
 
 .no-highlight {
