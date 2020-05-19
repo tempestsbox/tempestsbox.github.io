@@ -292,7 +292,10 @@ div.two-grid h3,.two-grid h4,.two-grid h5 {
     font-weight: 700;
     transition: all .2s ease;
 }
-:any-link:hover:not(.bubble) {
+:any-link.anchorjs-link {
+    border-bottom: none;
+}
+:any-link:hover:not(.bubble, .anchorjs-link) {
     color: #fff;
     border-bottom: solid 1px #fff;
 }
@@ -330,12 +333,6 @@ footer {
 section#social-links div {
     display: inline-flex;
     justify-content: center;
-}
-.footer-link, .anchorjs-link {
-    border-bottom: none;
-}
-.anchorjs-link:hover {
-    border-bottom: none;
 }
 body,html {
     margin: 0;
