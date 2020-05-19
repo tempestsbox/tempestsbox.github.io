@@ -476,3 +476,21 @@ img.wikitable-block {
 img.wikitable-item {
     margin-left: 3.96em;
 }
+
+input {
+    border: none;
+    min-width: 20em;
+    max-width: 100%;
+    height: 1.5em;
+    background-color: #272a46;
+    outline-color: transparent;
+    caret-color: white;
+    color:white;
+}
+input::placeholder {
+    color: white;
+}
+input::value
+input:focus::placeholder {
+    color: transparent;
+}

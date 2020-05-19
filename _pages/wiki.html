@@ -5,35 +5,20 @@ prefix-icon: "fas fa-book"
 navigation_weight: 2
 ---
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/assets/js/wikiSearch.js"></script>
+
 <script src="/assets/js/peekaboo.js"></script>
-
-{%- comment -%} <hr>
-<h2 class="center no-highlight">Frequently Viewed</h2>
-<hr>
-
-<div class="two-grid no-highlight">
-    {% assign wiki_frequents = site.wiki | sort: 'frequent_weight' %}{% for wiki in wiki_frequents %}{% if wiki.ignore_listing != true %}{% if wiki.frequent == true %}{% if wiki.frequent_weight %}
-    <div class="item{% if wiki.new %}{% else %} push-down{% endif %}">{% if wiki.new %}
-        <h3 id="new" class="two-grid">New in {{ wiki.new }}!</h3>{% endif %}
-        <h3 id="title" class="two-grid">{{ wiki.title }}</h3>
-        <h5 id="subtitle" class="two-grid">{{ wiki.tags }}</h5>
-        <a class="bubble" href="{{ wiki.url }}" rel="noopener noreferrer">
-            <img class="inner" src="/assets/docs/{{ wiki.image-path }}" alt="docs/{{ wiki.image-path }}"{% if wiki.peekaboo == true %} onmouseover="peekaboo(this);" onmouseout="unpeekaboo(this);"{% endif %}>
-        </a>
-        <p id="description" class="two-grid">{{ wiki.description }}</p>
-    </div>
-    {% endif %}{% endif %}{% endif %}{% endfor %}
-</div> {%- endcomment -%}
-
-<!-- -->
 
 <hr>
 <h2 class="center no-highlight">All Wikis</h2>
 <hr>
 
-<div class="two-grid no-highlight">
+<input class="center" id="wiki-search" onkeyup="search()" placeholder=" Search..." />
+
+<div class="two-grid no-highlight" id="wiki-list">
     {% assign wikis = site.wiki %}{% for wiki in wikis %}{% if wiki.ignore_listing != true %}
-    <div class="item{% if wiki.new %}{% else %} push-down{% endif %}">{% if wiki.new %}
+    <div class="grid item{% if wiki.new %}{% else %} push-down{% endif %}">{% if wiki.new %}
         <h3 id="new" class="two-grid">New in {{ wiki.new }}!</h3>{% endif %}
         <h3 id="title" class="two-grid">{{ wiki.title }}</h3>
         <h5 id="subtitle" class="two-grid">{{ wiki.tags }}</h5>
