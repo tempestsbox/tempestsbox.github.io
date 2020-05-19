@@ -434,8 +434,8 @@ br::-moz-selection {
     width: 75%;
     text-align: center;
 }
-img.center {
-    margin-left: 3.7em;
+figcaption {
+    text-align: center;
 }
 .push-down {
     border-top: solid transparent 1.8em;
