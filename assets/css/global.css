@@ -321,6 +321,11 @@ header {
 footer {
     font-size: 1em;
     line-height: .6em;
+    max-width: 80%;
+}
+section#social-links div {
+    display: inline-flex;
+    justify-content: center;
 }
 .footer-link, .anchorjs-link {
     border-bottom: none;

@@ -1,6 +1,16 @@
-<p id="copyright"> Loading date... </p>
+<section id="social-links">
+    <div class="btn-row social-links footer">
+        {% include social_link.html url="https://discord.gg/6TFaAuW" icon="fab fa-discord" title="Discord" %}
+        {% include social_link.html url="https://github.com/tempestsbox" icon="fab fa-github" title="GitHub" %}
+        {% include social_link.html url="https://reddit.com/r/thetempestsbox" icon="fab fa-reddit" title="Reddit" %}
+        {% include social_link.html url="https://youtube.com/channel/UCGsgiPCLZ0YJioZIBalclIA" icon="fab fa-youtube" title="YouTube" %}
+        {% include social_link.html url="https://patreon.com/thetempestsbox" icon="fab fa-patreon" title="Patreon" %}
+    </div>
+</section>
+
+<p id="copyright" class="center footer"> Loading date... </p>
 <br>
 
 <script>
-    document.getElementById("copyright").innerHTML = "<a class=\"footer-link\" href=\"/\">© " + new Date().getFullYear() + " {{ site.title }}</a>";
+    document.getElementById("copyright").innerHTML = "<a class=\"footer-link footer\" href=\"/\">© " + new Date().getFullYear() + " {{ site.title }}</a>";
 </script>
