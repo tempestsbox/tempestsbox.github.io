@@ -416,7 +416,7 @@ div.collapsible-content a button.download-btn#classic {
     font-size: .9em;
     border-bottom: dotted 1px #aaa;
 }
-button.download-btn:hover, button.download-coll:hover, button.download-btn#classic:hover {
+button.download-btn:hover, button.download-coll:hover, button.download-btn#classic:hover, button.collapsible-active {
     padding: 12px 40px;
 }
 
