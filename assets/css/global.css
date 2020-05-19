@@ -286,6 +286,7 @@ div.two-grid .two-grid#new {
     padding-bottom: 4px;
     font-size: 1em;
     font-weight: 700;
+    transition: all .2s ease;
 }
 :any-link:hover {
     color: #fff;
@@ -319,7 +320,6 @@ header {
 }
 footer {
     font-size: 1em;
-    color: #888;
     line-height: .6em;
 }
 .footer-link, .anchorjs-link {
