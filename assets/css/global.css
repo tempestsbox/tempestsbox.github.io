@@ -63,9 +63,14 @@ sup {
 }
 img {
     border-style: none;
+    width: auto;
+    min-width: 60%;
+}
+img.small {
+    max-width: 100%;
 }
 img.smaller {
-    scale: 75%;
+    max-width: 75%;
 }
 img.border {
     border: solid rgb(86, 101, 115) .1em;
@@ -436,7 +441,6 @@ br::-moz-selection {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
     text-align: center;
 }
 figcaption {

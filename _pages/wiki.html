@@ -7,8 +7,8 @@ navigation_weight: 2
 
 <script src="/assets/js/peekaboo.js"></script>
 
-<h2 class="center">Frequently Viewed</h2>
-<div class="two-grid">
+<h2 class="center no-highlight">Frequently Viewed</h2>
+<div class="two-grid no-highlight">
     {% assign wiki_frequents = site.wiki | sort: 'frequent_weight' %}{% for wiki in wiki_frequents %}{% if wiki.ignore_listing != true %}{% if wiki.frequent == true %}{% if wiki.frequent_weight %}
     <div class="item{% if wiki.new %}{% else %} push-down{% endif %}">{% if wiki.new %}
         <h3 id="new" class="two-grid">New in {{ wiki.new }}!</h3>{% endif %}
@@ -22,8 +22,8 @@ navigation_weight: 2
     {% endif %}{% endif %}{% endif %}{% endfor %}
 </div>
 
-<h2 class="center">All Wikis</h2>
-<div class="two-grid">
+<h2 class="center no-highlight">All Wikis</h2>
+<div class="two-grid no-highlight">
     {% assign wikis = site.wiki %}{% for wiki in wikis %}{% if wiki.ignore_listing != true %}
     <div class="item{% if wiki.new %}{% else %} push-down{% endif %}">{% if wiki.new %}
         <h3 id="new" class="two-grid">New in {{ wiki.new }}!</h3>{% endif %}
