@@ -12,64 +12,7 @@ navigation_weight: 1
 <p>These are installation instructions for <strong>the latest version of TTB</strong> - these will not work for classic
     1.12.</p>
 
-<button class="download-coll collapsible" id="installation"><i class="fas fa-user"></i> Singleplayer </button>
-<div id="download-coll-installation-content" class="collapsible-content">
-    <ol>
-        <li>Download the data pack from a link above. It should be a <code>.zip</code> file.</li>
-        <li><strong>Unzip the file</strong>.</li>
-        <li>Open Minecraft.</li>
-
-        <h4>Data Pack</h4>
-        <li>Select the world you want to install the data pack for, click on &quot;<code>Edit</code>&quot;, then
-            &quot;<code>Open world folder</code>&quot;.</li>
-        <li>Open the folder named <code>datapacks</code>, and drag <code>ttb_data</code> from the unzipped folder into
-            it.
-        </li>
-        <li>Enter the world.</li>
-        <li>Type <code>/reload</code> in the chat. If you do not have cheats enabled, press <code>Esc</code>, click on
-            &quot;<code>Open to LAN</code>&quot;, set &quot;<code>Cheats</code>&quot; to
-            &quot;<code>Enabled</code>&quot;,
-            and confirm.</li>
-        <li>After a few seconds, you should see a message in chat saying <code>The Tempest&#39;s Box: Loaded</code>,
-            confirming that the pack is installed.
-        </li>
-
-        <h4>Resource Pack</h4>
-        <li>From the main menu, click on &quot;<code>Options</code>&quot;, then &quot;<code>Resource packs</code>&quot;,
-            then &quot;<code>Open resource pack folder</code>&quot;.</li>
-        <li>Drag <code>ttb_resources</code> from the unzipped folder into it.</li>
-        <li>Click &quot;<code>Done</code>&quot; in the resource packs menu, then go back into it.</li>
-        <li>Enable the resource pack named <code>ttb_resources</code>.</li>
-    </ol>
-</div>
-<button class="download-coll collapsible" id="installation"><i class="fas fa-user-friends"></i> Multiplayer </button>
-<div id="download-coll-installation-content" class="collapsible-content">
-    <h4 style="margin-left: 2.3em;">Data Pack</h4>
-    <ol>
-        <li>Download the data pack from a link above. It should be a <code>.zip</code> file.</li>
-        <li>Open your server folder, then open <code>world</code>.</li>
-        <li>Put the data pack into a folder named <code>datapacks</code></li>
-        <li>Type <code>{% include mcwiki.html url="Commands/reload" title="/reload" %}</code>
-            from the console or as an operator if the
-            server was running during the installation.</li>
-        <li>After a few seconds, you should see a message in chat saying <code>The Tempest&#39;s Box: Loaded</code>,
-            confirming that the pack is installed.
-        </li>
-    </ol>
-
-    <h4 style="margin-left: 2.3em;">Resource Pack</h4>
-    <ol>
-        <li>
-            Download the <a href="https://github.com/{{ site.github-user }}/{{ site.github-repo }}/releases/latest">latest resource pack
-                from
-                GitHub</a>.
-            <br><br>
-            <img src="/assets/docs/fake_release-resources.png" alt="fake_release-resources.png" style="max-width: 75%;">
-        </li>
-        <li>Head to <a href="https://mc-packs.net">mc-packs.net</a> and upload the downloaded ZIP file</li>
-        <li>Modify your <code>server.properties</code> file as mcpacks.net shows</li>
-    </ol>
-</div>
+{% include installation_buttons.html %}
 
 <hr class="separator">
 
