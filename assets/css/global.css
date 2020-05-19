@@ -69,7 +69,7 @@ img.small {
     max-width: 100%;
 }
 img.smaller {
-    max-width: 75%;
+    max-width: 80%;
 }
 img.border {
     border: solid rgb(86, 101, 115) .1em;
@@ -200,23 +200,23 @@ div.two-grid .item {
     max-width: 320px;
     margin: 20px;
 }
-div.two-grid a.bubble {
+a.bubble {
     margin: 12px 0;
     width: 320px;
     height: 180px;
 }
-div.two-grid a.bubble img {
+a.bubble img {
     width: 320px;
     height: 180px;
 }
-div.two-grid a.bubble {
+a.bubble {
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: none;
 }
-div.two-grid a.bubble::after {
+a.bubble::after {
     position: absolute;
     display: block;
     color: #fff;
@@ -226,21 +226,21 @@ div.two-grid a.bubble::after {
     opacity: 0;
     transition: opacity .3s;
 }
-div.two-grid a.bubble:focus::after,div.two-grid a.bubble:hover::after {
+a.bubble:focus::after,a.bubble:hover::after {
     opacity: 1;
     transition: opacity .3s;
     transition-delay: .1s;
 }
-div.two-grid a.bubble:focus .inner,div.two-grid a.bubble:hover .inner {
+a.bubble:focus .inner,a.bubble:hover .inner {
     opacity: .35;
     transition: opacity .5s,transform .5s;
     transform: scale(1.1);
 }
-div.two-grid a.bubble .inner {
+a.bubble .inner {
     opacity: 1;
     transition: opacity .5s,transform .5s;
 }
-div.two-grid a.bubble {
+a.bubble {
     background: #111;
     border-radius: 3px;
     width: 320px;
@@ -250,19 +250,19 @@ div.two-grid a.bubble {
 div.two-grid h3,.two-grid h4,.two-grid h5 {
     margin: 0;
 }
-div.two-grid .two-grid#subtitle {
+.two-grid#subtitle {
     font-size: .6em;
     color: #bbb;
     line-height: 1.4em;
     font-weight: 400;
     margin-top: 0;
 }
-div.two-grid .two-grid#description {
+.two-grid#description {
     font-size: .7em;
     color: #bbb;
     line-height: 1.4em;
 }
-div.two-grid .two-grid#new {
+.two-grid#new {
     color: #999;
 }
 .intro .avatar {
@@ -292,7 +292,7 @@ div.two-grid .two-grid#new {
     font-weight: 700;
     transition: all .2s ease;
 }
-:any-link:hover {
+:any-link:hover:not(.bubble) {
     color: #fff;
     border-bottom: solid 1px #fff;
 }
