@@ -61,8 +61,7 @@ sub {
 sup {
     top:-.5em;
 }
-img {
-    border-style: none;
+img:not(.ignore-defaults) {
     width: auto;
     min-width: 60%;
 }
