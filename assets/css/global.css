@@ -334,6 +334,9 @@ section#social-links div {
     display: inline-flex;
     justify-content: center;
 }
+a.social-title:not(:hover) {
+    opacity: 75%;
+}
 body,html {
     margin: 0;
     padding: 0;
@@ -490,7 +493,6 @@ input {
 input::placeholder {
     color: white;
 }
-input::value
 input:focus::placeholder {
     color: transparent;
 }
