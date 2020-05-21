@@ -163,6 +163,15 @@ template {
     color: #d581ff;
     border-bottom: solid 2px #d581ff;
 }
+#wiki-header {
+    padding: 10px 0;
+    background: #F44336;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#navbar .item {
 @media only screen and (max-width: 600px) {
     #navbar {
         padding: 15px 0
