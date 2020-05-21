@@ -200,23 +200,22 @@ div.two-grid .item {
     max-width: 320px;
     margin: 20px;
 }
-a.bubble {
+.bubble {
     margin: 12px 0;
     width: 320px;
     height: 180px;
-}
-a.bubble img {
-    width: 320px;
-    height: 180px;
-}
-a.bubble {
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: none;
+    background: #111;
+    border-radius: 3px;
+    width: 320px;
+    height: 180px;
+    overflow: hidden;
 }
-a.bubble::after {
+.bubble::after {
     position: absolute;
     display: block;
     color: #fff;
@@ -226,26 +225,25 @@ a.bubble::after {
     opacity: 0;
     transition: all .3s;
 }
-a.bubble:focus::after,a.bubble:hover::after {
+.bubble img {
+    width: 320px;
+    height: 180px;
+    border-bottom: none;
+}
+.bubble:focus::after,a.bubble:hover::after {
     opacity: 1;
     transition: all .3s;
     transition-delay: .1s;
 }
-a.bubble:focus .inner,a.bubble:hover .inner {
+.bubble:focus .inner,a.bubble:hover .inner {
     opacity: .35;
     transition: all .5s,transform .5s;
     transform: scale(1.1);
+    border-bottom: none;
 }
-a.bubble .inner {
+.bubble .inner {
     opacity: 1;
     transition: all .5s,transform .5s;
-}
-a.bubble {
-    background: #111;
-    border-radius: 3px;
-    width: 320px;
-    height: 180px;
-    overflow: hidden;
 }
 div.two-grid h3,.two-grid h4,.two-grid h5 {
     margin: 0;
@@ -284,18 +282,18 @@ div.two-grid h3,.two-grid h4,.two-grid h5 {
     margin-right: 20px;
 }
 :any-link {
-    color: #ddd;
+    color: white;
     text-decoration: none;
-    border-bottom: dotted 1px #aaa;
     padding-bottom: 4px;
     font-size: 1em;
     font-weight: 700;
     transition: all .2s ease;
 }
-.anchorjs-link, .no-underline {
-    border-bottom: none;
+:any-link:not(.anchorjs-link):not(.no-underline) {
+    color: #ddd;
+    border-bottom: dotted 1px #aaa;
 }
-:any-link:hover:not(.bubble):not(.anchorjs-link):not(.no-underline) {
+:any-link:hover:not(.anchorjs-link):not(.no-underline) {
     color: #fff;
     border-bottom: solid 1px #fff;
 }

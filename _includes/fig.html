@@ -1,5 +1,5 @@
 <figure>
-    <img class="no-highlight center smaller border{% if include.classes %} {{ include.classes }}{% endif %}" src="{{ include.src }}" alt="{{ include.alt }}">
+    <img class="no-highlight center smaller{% if include.border == true %} border{% endif %}{% if include.class %} {{ include.class }}{% endif %}" src="{{ include.src }}">
     <figcaption>
         <code>
             {{ include.caption }}

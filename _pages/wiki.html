@@ -22,7 +22,7 @@ navigation_weight: 2
         <h3 id="new" class="two-grid">New in {{ wiki.new }}!</h3>{% endif %}
         <h3 id="title" class="two-grid">{{ wiki.title }}</h3>
         <h5 id="subtitle" class="two-grid">{{ wiki.tags }}</h5>
-        <a class="bubble" href="{{ wiki.url }}" rel="noopener noreferrer">
+        <a class="bubble no-underline" href="{{ wiki.url }}" rel="noopener noreferrer">
             <img class="inner" src="/assets/docs/{{ wiki.image-path }}" alt="docs/{{ wiki.image-path }}"{% if wiki.peekaboo == true %} onmouseover="peekaboo(this);" onmouseout="unpeekaboo(this);"{% endif %}>
         </a>
         <p id="description" class="two-grid">{{ wiki.description }}</p>
