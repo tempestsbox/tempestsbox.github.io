@@ -171,7 +171,6 @@ template {
     display: flex;
     justify-content: center;
 }
-#navbar .item {
 @media only screen and (max-width: 600px) {
     #navbar {
         padding: 15px 0
