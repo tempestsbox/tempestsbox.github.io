@@ -1,8 +1,8 @@
 <figure>
-    <img class="no-highlight center smaller{% if include.border == true %} border{% endif %}{% if include.class %} {{ include.class }}{% endif %}" src="{{ include.src }}">
+    <img center class="no-highlight smaller{% if include.border == true %} border{% endif %}{% if include.class %} {{ include.class }}{% endif %}" src="{{ include.src }}"{% if include.tags %} {{ include.tags }}{% endif %}>{% if include.caption %}
     <figcaption>
         <code>
             {{ include.caption }}
         </code>
-    </figcaption>
+    </figcaption>{% endif %}
 </figure>

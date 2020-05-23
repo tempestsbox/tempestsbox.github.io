@@ -6,14 +6,18 @@ frequent_weight: 2
 peekaboo: true
 new: "0.8"
 description: "The Tempite Stone is needed to power all the machines in TTB. Without it, your machines can't work!"
-extra_description: " Use a Hopper feed it Amethyst - 1 Amethyst → 1000 Tempite. When activated, any adjacent Stained Glass blocks will be powered with Tempite, sending out a wire-like charge. If this charge hits a machine, the machine will be powered, costing Tempite from the nearest Tempite Stone within 16 blocks."
-tags: "Block, Machine"
+extra_description: ""
 image-path: "tempite_stone.png"
 ---
 
-<hr>
-<h2 class="center title no-highlight">Gallery</h2>
-<hr>
+## Usage
+Using a Hopper, you can feed a Tempite Stone [Amethyst](/wiki/Amethyst). For every `1` [Amethyst](/wiki/Amethyst), `1000` [Tempite](/wiki/Tempite) is added to the Tempite Stone.  
+When a Tempite Stone is activated, any adjacent glass blocks will be powered with Tempite, sending out a wire-like charge. If this charge hits a machine's back, the machine will be powered.
+{% include fig.html src="/assets/docs/tempite_wire-cave.gif" %}
+
+---
+<h2 center>Gallery</h2>
+---
 
 {% include fig.html src="/assets/docs/tempite_stone-redstone_power.gif" caption="A Tempite Stone getting powered without any Tempite<br>(semi-powered)" %}
 <br>
