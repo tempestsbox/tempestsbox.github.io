@@ -22,6 +22,14 @@ h1 {
     font-size: 2em;
     margin: .67em 0;
 }
+h2:not([ignore-underline]):not([center]):not([title]) {
+    padding-bottom: .4em;
+    border-bottom: solid #ffffff46 1px;
+    font-weight: normal;
+}
+h3 {
+    font-size: 1.2em;
+}
 hr {
     box-sizing: content-box;
     height: 0;
@@ -29,7 +37,6 @@ hr {
 }
 pre {
     font-family: monospace,monospace;
-    font-size: 1em;
 }
 a {
     background-color: transparent;
@@ -44,7 +51,6 @@ b,strong {
 }
 code,kbd,samp {
     font-family: monospace,monospace;
-    font-size: 1em;
 }
 small {
     font-size: 80%;
@@ -73,6 +79,10 @@ img.smaller {
 }
 img.border {
     border: solid rgb(86, 101, 115) .1em;
+}
+img[alt="404.png"] {
+    width: 70%;
+    height: auto;
 }
 button,input,optgroup,select,textarea {
     font-family: inherit;
@@ -300,7 +310,7 @@ div.two-grid h3,.two-grid h4,.two-grid h5 {
 }
 :any-link {
     padding-bottom: .1em;
-    transition: border-bottom .2s ease;
+    transition: all .2s ease;
 }
 .anchorjs-link {
     transition: all 0.2s ease;
@@ -346,7 +356,6 @@ header {
     width: 100%;
 }
 footer {
-    font-size: 1em;
     line-height: .6em;
     max-width: 80%;
 }
@@ -480,14 +489,15 @@ figcaption {
     list-style: square;
 }
 .sprite {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     float: left;
 }
 table, td, th {
     margin: 1em 0;
     border: 1px solid #a2a9b1;
     border-collapse: collapse;
+    padding: 0 0.3em;
 }
 td.breaking-drop-yes {
     background-color: #C6EFCE;
@@ -521,4 +531,11 @@ input::placeholder {
 }
 input:focus::placeholder {
     color: transparent;
+}
+
+code {
+    border: solid rgba(58, 64, 70) 1px;
+    background-color: rgb(38, 42, 46);
+    border-radius: 0.2em;
+    padding: 0.2em;
 }

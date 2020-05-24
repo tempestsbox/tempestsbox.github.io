@@ -1,0 +1,18 @@
+<br>
+
+<h2>Data Values</h2>
+<h3>ID</h3>
+<table id="wikitable" center-text style="max-width: 100%;">
+    <tbody>
+        <tr>
+            <th>Name</th>
+            <th>Namespaced ID</th>
+            <th>Translation Key</th>
+        </tr>
+        <tr>
+            <td>{% include asset/ttb_text.html path=include.block_texture_path title=include.block_name class="wikitable-block" %}</td>
+            <td><code>{{ include.block_id }}</code></td>
+            <td><code>block.ttb.{{ include.block_id }}</code></td>
+        </tr>
+    </tbody>
+</table>

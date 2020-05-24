@@ -11,10 +11,10 @@ navigation_weight: 2
 <script src="/assets/js/peekaboo.js"></script>
 
 <hr>
-<h2 center class="title no-highlight">All Wikis</h2>
+<h2 center title class="no-highlight">All Wikis</h2>
 <hr>
 
-<input center id="wiki-search" onkeyup="search()" placeholder=" Search..." />
+<input center id="wiki-search" oninput="search()" placeholder=" Search..." />
 
 <div class="two-grid no-highlight" id="wiki-list">
     {% assign wikis = site.wiki %}{% for wiki in wikis %}

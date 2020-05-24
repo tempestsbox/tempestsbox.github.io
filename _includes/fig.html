@@ -1,6 +1,6 @@
 <figure>
-    <img center class="no-highlight smaller{% if include.border == true %} border{% endif %}{% if include.class %} {{ include.class }}{% endif %}" src="{{ include.src }}"{% if include.tags %} {{ include.tags }}{% endif %}>{% if include.caption %}
-    <figcaption>
+    <img center class="no-highlight smaller{% if include.border == true %} border{% endif %}{% if include.class %} {{ include.class }}{% endif %}" src="{{ include.src }}"{% if include.attributes %} {{ include.attributes }}{% endif %}>{% if include.caption %}
+    <figcaption style="padding-top: 1em;">
         <code>
             {{ include.caption }}
         </code>
