@@ -256,12 +256,21 @@ div.two-grid .item {
 div.two-grid h3,.two-grid h4,.two-grid h5 {
     margin: 0;
 }
-.two-grid#subtitle {
-    font-size: .6em;
+#subtitle, #subtitle *, .subtitle, .subtitle * {
+    font-size: .95em;
     color: #bbb;
     line-height: 1.4em;
     font-weight: 400;
     margin-top: 0;
+}
+#subtitle *:hover, .subtitle *:hover {
+    border-bottom: solid 1px currentColor;
+}
+.two-grid#title a {
+    color: #fff;
+}
+.two-grid#title a:hover {
+    border-bottom: solid 1px currentColor;
 }
 .two-grid#description {
     font-size: .7em;
@@ -290,18 +299,23 @@ div.two-grid h3,.two-grid h4,.two-grid h5 {
     margin-right: 20px;
 }
 :any-link {
-    color: white;
-    text-decoration: none;
-    padding-bottom: 4px;
-    font-size: 1em;
-    font-weight: 700;
-    transition: all .2s ease;
+    padding-bottom: .1em;
+    transition: border-bottom .2s ease;
 }
-:any-link:not(.anchorjs-link):not(.no-underline) {
+.anchorjs-link {
+    transition: all 0.2s ease;
+}
+:any-link {
+    text-decoration: none;
+}
+:any-link:not(.ignore-link-formatting) {
+    color: white;
+}
+:any-link:not(.anchorjs-link):not(.ignore-link-formatting) {
     color: #ddd;
     border-bottom: dotted 1px #aaa;
 }
-:any-link:hover:not(.anchorjs-link):not(.no-underline) {
+:any-link:hover:not(.anchorjs-link):not(.ignore-link-formatting) {
     color: #fff;
     border-bottom: solid 1px #fff;
 }
@@ -339,6 +353,9 @@ footer {
 section#social-links div {
     display: inline-flex;
     justify-content: center;
+}
+a.social-title {
+    color: white;
 }
 a.social-title:not(:hover) {
     opacity: 75%;

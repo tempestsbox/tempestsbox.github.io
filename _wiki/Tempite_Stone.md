@@ -1,12 +1,10 @@
 ---
 title: "Tempite Stone"
 layout: wiki
-frequent: true
-frequent_weight: 2
 peekaboo: true
 new: "0.8"
 description: "The Tempite Stone is needed to power all the machines in TTB. Without it, your machines can't work!"
-extra_description: ""
+categories: [ machine ]
 image-path: "tempite_stone.png"
 ---
 

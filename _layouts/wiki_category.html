@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<script src="/assets/js/peekaboo.js"></script>
+
+<hr>
+<h2 center>Wikis in the category '{{ page.category }}'</h2>
+<hr>
+
+<div class="two-grid no-highlight" id="wiki-list">
+    {% assign wikis = site.wiki %}{% for wiki in wikis %}
+        {% if wiki.categories contains page.category %}
+            {% if wiki.image-path and wiki.ignore_listing != true %}
+                <div class="grid item{% if wiki.new %}{% else %} push-down{% endif %}">{% if wiki.new %}
+                    <h3 id="new" class="two-grid">New in {{ wiki.new }}!</h3>{% endif %}
+                    <h3 id="title" class="two-grid"><a href="{{ wiki.url }}" class="ignore-link-formatting">{{ wiki.title }}</a></h3>
+                    <h5 id="subtitle" class="two-grid">{% for category in wiki.categories %}<a href="/wiki/category/{{ category }}" class="ignore-link-formatting">{{ category }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}</h5>
+                    <a class="bubble ignore-link-formatting" href="{{ wiki.url }}" rel="noopener noreferrer">
+                        <img class="inner" src="/assets/docs/{{ wiki.image-path }}" alt="docs/{{ wiki.image-path }}"{% if wiki.peekaboo == true %} onmouseover="peekaboo(this);" onmouseout="unpeekaboo(this);"{% endif %}>
+                    </a>
+                    <p id="description" class="two-grid">{{ wiki.description }}</p>
+                </div>
+            {% endif %}
+        {% endif%}
+    {% endfor %}
+</div>
