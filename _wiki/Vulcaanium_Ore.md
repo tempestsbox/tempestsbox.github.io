@@ -4,7 +4,7 @@ layout: wiki
 description: "Vulcaanium Ore is a rare ore that generates deep underground and is the only source of Vulcaanium"
 extra_description: "."
 categories: [ block, ore ]
-image-path: "vulcaanium_ore-showcase.png"
+image-path: "vulcaanium_ore/showcase.png"
 ---
 
 ## Obtaining

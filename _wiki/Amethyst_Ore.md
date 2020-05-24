@@ -4,7 +4,7 @@ layout: wiki
 description: "Amethyst Ore is a rare ore that generates deep underground and is the only reliable source of Amethyst"
 extra_description: "."
 categories: [ block, ore ]
-image-path: "amethyst_ore-showcase.png"
+image-path: "amethyst_ore/showcase.png"
 ---
 
 ## Obtaining
