@@ -68,7 +68,7 @@ sup {
     top:-.5em;
 }
 img:not(.ignore-defaults) {
-    width: auto;
+    width: 100%;
     min-width: 60%;
 }
 img.small {
@@ -498,6 +498,36 @@ table, td, th {
     border: 1px solid #a2a9b1;
     border-collapse: collapse;
     padding: 0 0.3em;
+    overflow: auto;
+}
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px)  {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    th, td {
+        vertical-align: middle;
+    }
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    th { border-right: 1px solid #ccc; }
+    td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+    }
+    table#data-values tbody tr td:nth-of-type(1):before { content: "Name"; }
+    table#data-values tbody tr td:nth-of-type(2):before { content: "Namespaced ID"; }
+    table#data-values tbody tr td:nth-of-type(3):before { content: "Translation Key"; }
 }
 td.breaking-drop-yes {
     background-color: #C6EFCE;
