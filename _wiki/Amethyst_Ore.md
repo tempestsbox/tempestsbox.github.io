@@ -11,4 +11,8 @@ image-path: "amethyst_ore/showcase.png"
 ### Natural Generation
 Amethyst Ore can generate in [the Overworld](https://minecraft.gamepedia.com/The_Overworld) in the form of [mineral veins](https://minecraft.gamepedia.com/Mineral_vein). {%- comment -%} Amethyst Ore attempts to generate 3 time per chunk in veins of sizes 5 to 12, from altitudes 0 to 23, in all biomes. {%- endcomment -%}
 
+<br>
+
+### Breaking
+If broken with a {% include mcwiki.html url="Pickaxe" title="pickaxe" %}, they break quickly and drop some {% include mcwiki.html url="Experience" title="experience" %}.
 {% include data_table/obtaining/breaking/ore.html block_name="Amethyst Ore" block_id="amethyst_ore" block_texture_path="block/amethyst_ore" %}

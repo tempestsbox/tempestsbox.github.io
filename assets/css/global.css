@@ -526,7 +526,7 @@ table, td, th {
         padding-right: 10px;
     }
     table#data-values tbody tr td:nth-of-type(1):before { content: "Name"; }
-    table#data-values tbody tr td:nth-of-type(2):before { content: "Namespaced ID"; }
+    table#data-values tbody tr td:nth-of-type(2):before { content: "{% include mcwiki.html url="Namespaced_ID" title="Namespaced ID" %}"; }
     table#data-values tbody tr td:nth-of-type(3):before { content: "Translation Key"; }
 }
 td.breaking-drop-yes {
