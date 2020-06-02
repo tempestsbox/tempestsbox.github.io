@@ -1,4 +1,5 @@
 ---
+title: "New Features"
 layout: default
 ---
 
@@ -8,21 +9,15 @@ layout: default
 <!-- <script src="/assets/js/peekaboo.js"></script> -->
 
 <hr>
-<h2 center title>Wikis in the category '{{ page.category }}'</h2>
+<h2 center title class="no-highlight">{{ page.title }} in {{ site.latest }}</h2>
 <hr>
-
-{{ content }}
-
-<br>
 
 <input center id="wiki-search" oninput="search()" placeholder=" Search..." />
 
 <div class="two-grid no-highlight" id="wiki-list">
     {% assign wikis = site.wiki %}{% for wiki in wikis %}
-        {% if wiki.categories contains page.category %}
-            {% if wiki.image-path and wiki.ignore_listing != true %}
-                {% include wiki_widget.html wiki=wiki %}
-            {% endif %}
-        {% endif%}
+        {% if wiki.image-path and wiki.new == true %}
+            {% include wiki_widget.html wiki=wiki %}
+        {% endif %}
     {% endfor %}
 </div>

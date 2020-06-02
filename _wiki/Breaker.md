@@ -1,6 +1,7 @@
 ---
 title: "Breaker"
 layout: wiki
+new: true
 description: "Description"
 categories: [ block, machine ]
 image-path: "breaker.png"
@@ -11,9 +12,11 @@ image-path: "breaker.png"
 {% include text/obtaining/breaking/barrel.md %}
 
 ### Crafting
-![breaker/recipe.png](/assets/docs/breaker/recipe.png)
+{% include recipe.html src="/assets/docs/breaker/recipe.png" ingredients="4 Vulcaanium Crystals, 6 Red Nether Bricks, 2 Iron Bars, and 1 Lava Bucket" %}
 
 ## Usage
+### Machine
+Someone should write something here.
 ### Tempite Component
 {{ page.title }}s can be powered from the back by [Tempite Wire](/wiki/Tempite_Wire).
 

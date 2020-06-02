@@ -1,8 +1,8 @@
-<div class="grid item{% if include.wiki.new %}{% else %} push-down{% endif %}">{% if include.wiki.new %}
-    <h3 id="new" class="two-grid">New in {{ include.wiki.new }}!</h3>{% endif %}
+<div class="grid item{% if include.wiki.new %}{% else %} push-down{% endif %}">{% if include.wiki.new == true %}
+    <a href="/wiki/new"><h3 id="new" class="two-grid">New in {{ site.latest }}!</h3></a>{% endif %}
     <h3 id="title" class="two-grid"><a href="{{ include.wiki.url }}" class="ignore-link-formatting">{{ include.wiki.title }}</a></h3>
     <h5 id="subtitle" class="two-grid">{% for category in include.wiki.categories %}<a href="/wiki/category/{{ category }}" class="ignore-link-formatting">{{ category }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}</h5>
-    <a class="bubble ignore-link-formatting" href="{{ include.wiki.url }}" rel="noopener noreferrer">
+    <a class="bubble ignore-link-formatting" href="{{ include.wiki.url }}" rel="noopener noreferrer" target="_blank">
         <img loading="lazy" class="inner" src="/assets/docs/{{ include.wiki.image-path }}" alt="docs/{{ include.wiki.image-path }}"{% if include.wiki.peekaboo == true %} onmouseover="peekaboo(this);" onmouseout="unpeekaboo(this);"{% endif %}>
     </a>
     <p id="description" class="two-grid">{{ include.wiki.description }}</p>

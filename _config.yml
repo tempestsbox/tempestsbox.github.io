@@ -1,3 +1,17 @@
+title: "The Tempest's Box"
+description: "An update of Zoey's TTB for 1.16+"
+latest: "0.8"
+
+github_user: "tempestsbox"
+github_repo: "ttb"
+github_repo_classic: "ttb-classic"
+github_default_branch: "ver/1.16"
+discord: "6TFaAuW"
+curseforge-link: "minecraft/customization/ttb"
+reddit: "thetempestsbox"
+youtube: "channel/UCGsgiPCLZ0YJioZIBalclIA"
+patreon: "thetempestsbox"
+
 collections:
   wiki:
     output: true
@@ -5,16 +19,3 @@ collections:
   pages:
     output: true
     permalink: /:path
-
-title: "The Tempest's Box"
-description: "An update of Zoey's TTB for 1.16+"
-
-github-user: "tempestsbox"
-github-repo: "ttb"
-github-repo-classic: "ttb-classic"
-github-default_branch: "ver/1.16"
-discord: "6TFaAuW"
-curseforge-link: "minecraft/customization/ttb"
-reddit: "thetempestsbox"
-youtube: "channel/UCGsgiPCLZ0YJioZIBalclIA"
-patreon: "thetempestsbox"
