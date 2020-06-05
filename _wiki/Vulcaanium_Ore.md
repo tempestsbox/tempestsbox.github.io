@@ -1,6 +1,6 @@
 ---
 title: "Vulcaanium Ore"
-layout: wiki
+layout: wiki/default
 new: true
 description: "Vulcaanium Ore is a rare ore that generates deep underground and is the only reliable source of Vulcaanium"
 extra_description: "."

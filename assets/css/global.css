@@ -161,6 +161,8 @@ template {
     width: 100%;
     display: flex;
     justify-content: center;
+    transition: all 0.2s ease;
+    top: 20px;
 }
 #navbar .item {
     font-weight: 700;
@@ -280,8 +282,14 @@ div.two-grid h3,.two-grid h4,.two-grid h5 {
 .two-grid#title a {
     color: #fff;
 }
-.two-grid#title a:hover {
-    border-bottom: solid 1px currentColor;
+.two-grid#title a:hover, a.two-grid#new:hover h3 {
+    border-left: solid 0.3em currentColor;
+    padding-left: 8px;
+    transition: all 0.2s ease;
+}
+a.two-grid#new h3 {
+    transition: all 0.2s ease;
+    font-size: 0.9em;
 }
 .two-grid#description {
     font-size: .7em;
@@ -389,6 +397,7 @@ hr {
 }
 button {
     border: none;
+    border-radius: 0;
     color: white;
     cursor: pointer;
     font-size: 20px;
@@ -587,4 +596,8 @@ code {
     background-color: rgb(38, 42, 46);
     border-radius: 0.2em;
     padding: 0.2em;
+}
+
+h4:not(.two-grid):not(.subtitle) {
+    background-color: rgba(255, 255, 255, 0.04);
 }

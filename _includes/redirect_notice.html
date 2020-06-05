@@ -1,4 +1,4 @@
 <div class="redirect-notice" style="font-style: italic">
     <img alt="Disambig color.svg" src="https://gamepedia.cursecdn.com/minecraft_gamepedia/f/fd/Disambig_color.svg?version=33a2a1cc80f4a7d2208caea4d18b92bd" class="ignore-defaults" style="width: 20px; height: 15px;">
-    {{ include.description }}
+    {% if include.url %}<a href="{{ include.url }}">{% endif %}{{ include.description }}{% if include.url %}</a>{% endif %}
 </div>

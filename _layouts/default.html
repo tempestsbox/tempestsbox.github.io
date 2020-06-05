@@ -28,9 +28,9 @@
 </head>
 
 <body>
-    <header class="no-highlight">
-        {% include header.html %}{% if page.url contains "wiki" %}
-        {% include wiki_header.html %}{% endif %}
+    <header id="header" class="no-highlight">
+        {% include header.html %}
+        {%- if page.url contains "wiki" -%}{% include wiki_header.html %}{%- endif -%}
     </header>
 
     <div id="wrapper">
@@ -46,6 +46,7 @@
 
     {% include script/anchorjs.html %}
     {% include script/top_function.html %}
+    <!-- <script src="/assets/js/dynamicNavbar.js"></script> -->
 </body>
 
 </html>

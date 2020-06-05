@@ -1,6 +1,6 @@
 ---
 title: "Amethyst Ore"
-layout: wiki
+layout: wiki/default
 new: true
 description: "Amethyst Ore is a rare ore that generates deep underground and is the only reliable source of Amethyst"
 extra_description: "."

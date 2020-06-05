@@ -1,6 +1,6 @@
 ---
 title: "Machine"
-layout: wiki
+layout: wiki/default
 description: "Description"
 categories: []
 image-path: "machines.png"

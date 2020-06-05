@@ -1,5 +1,5 @@
 <figure>
-    <img center class="no-highlight smaller{% if include.border == true %} border{% endif %}{% if include.class %} {{ include.class }}{% endif %}" src="{{ include.src }}"{% if include.attributes %} {{ include.attributes }}{% endif %}>{% if include.caption %}
+    <img{% if include.center != false %} center{% endif %} class="no-highlight smaller{% if include.border == true or include.caption %} border{% endif %}{% if include.class %} {{ include.class }}{% endif %}" src="{{ include.src }}"{% if include.attributes %} {{ include.attributes }}{% endif %}>{% if include.caption %}
     <figcaption style="padding-top: 1em;">
         <code>
             {{ include.caption }}

@@ -1,6 +1,6 @@
 ---
 title: "Amethyst Crystal"
-layout: wiki
+layout: wiki/default
 new: true
 description: "Description"
 categories: [ item, crystal ]
