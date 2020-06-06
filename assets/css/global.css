@@ -604,3 +604,17 @@ code {
 h4:not(.two-grid):not(.subtitle) {
     background-color: rgba(255, 255, 255, 0.04);
 }
+
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 5 6.25%;
+    position: relative;
+    height: 0;
+}
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}

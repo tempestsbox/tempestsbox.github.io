@@ -15,7 +15,10 @@ patreon: "thetempestsbox"
 collections:
   wiki:
     output: true
-    permalink: /:collection/:path
+    permalink: /wiki/:path
+  wiki_redirects:
+    output: true
+    permalink: /:path
   pages:
     output: true
     permalink: /:path
