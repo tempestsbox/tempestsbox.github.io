@@ -80,8 +80,9 @@ img.smaller {
 }
 img.border {
     padding: 4px;
+    border-radius: 1.5px;
+    border: solid rgb(86, 101, 115) 1px;
     background-color: rgba(86, 101, 115, 0.45);
-    border: solid rgb(86, 101, 115) .1em;
 }
 img[alt="404.png"] {
     width: 70%;
