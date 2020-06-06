@@ -79,6 +79,8 @@ img.smaller {
     max-width: 80%;
 }
 img.border {
+    padding: 4px;
+    background-color: rgba(86, 101, 115, 0.45);
     border: solid rgb(86, 101, 115) .1em;
 }
 img[alt="404.png"] {
