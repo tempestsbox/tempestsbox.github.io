@@ -5,5 +5,5 @@
     <a class="bubble ignore-link-formatting" href="{{ include.wiki.url }}" rel="noopener noreferrer">
         <img loading="lazy" class="inner" src="/assets/docs/{{ include.wiki.image-path }}" alt="docs/{{ include.wiki.image-path }}"{% if include.wiki.peekaboo == true %} onmouseover="peekaboo(this);" onmouseout="unpeekaboo(this);"{% endif %}>
     </a>
-    <p id="description" class="two-grid">{{ include.wiki.description }}{{ include.wiki.excerpt }}</p>
+    <p id="description" class="two-grid">{{ include.wiki.description }}{{ include.wiki.og_description }}</p>
 </div>
