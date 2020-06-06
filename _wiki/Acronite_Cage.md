@@ -28,7 +28,7 @@ When Mysterious, the thrown potion's effect is changed to {% include mcwiki.html
 ### Tempite Component
 {{ page.title }}s can be powered from the back by [Tempite Wire](/wiki/Tempite_Wire).
 - *See [{{ page.title }} § Machine ](#machine)*
-{% include data_table/machine_cost.html block_name="Acronite Cage" block_id="acronite_cage" block_texture_path="block/acronite_cage" cost_base=40 cost_ascension=5 cost_reduction=6 %}
+{% include data_table/machine_cost.html block_name="Acronite Cage" block_id="acronite_cage" block_texture_path="block/acronite_cage_front" cost_base=40 cost_ascension=5 cost_reduction=6 %}
 
 ### Breaking
 {% include data_table/obtaining/breaking/barrel.html block_name="Acronite Cage" block_id="acronite_cage" block_texture_path="block/acronite_cage_front" %}
