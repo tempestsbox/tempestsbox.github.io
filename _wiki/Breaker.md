@@ -23,6 +23,8 @@ When powered, the Breaker will break blocks directly in front of its front face.
 Ascension of the {{ page.title }} increases the distance that it breaks.
 #### Mysteriosity
 The {{ page.title }} does not have Mysterious functionality.
+- *See [Machine § Mysteriosity](/wiki/Machine#mysteriosity)*
+
 ### Tempite Component
 - *See [{{ page.title }} § Machine ](#machine)*
 

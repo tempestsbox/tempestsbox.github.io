@@ -23,7 +23,7 @@ layout: default
 
 {{ page.description }}{{ page.extra_description }}
 
-<br><br>
+{%- if page.description or page.extra_description -%}<br><br>{%- endif -%}
 
 {{ content }}
 
