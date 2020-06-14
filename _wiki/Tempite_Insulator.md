@@ -3,7 +3,7 @@ title: "Tempite Insulator"
 layout: wiki/default
 description: "Description"
 categories: [ block, item ]
-image-path: "tempite_insulator.png"
+image_path: "tempite_insulator.png"
 ---
 
 ## Obtaining

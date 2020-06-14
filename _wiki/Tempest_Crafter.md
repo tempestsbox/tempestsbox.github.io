@@ -3,7 +3,7 @@ title: "Tempest Crafter"
 layout: wiki/default
 description: "The Tempest Crafter is perhaps the most important block in all of TTB. It is used to craft machines, staffs, spirit gems, and much more!"
 categories: [ block, ui ]
-image-path: "tempest_crafter.png"
+image_path: "tempest_crafter.png"
 ---
 
 ## Obtaining

@@ -5,7 +5,7 @@ new: true
 description: "The Acronite Cage releases a vile of poisonous gas in the direction it faces, affecting all entities its cloud hits"
 extra_description: "."
 categories: [ block, machine ]
-image-path: "acronite_cage.png"
+image_path: "acronite_cage.png"
 ---
 
 <!-- Obtaining -->

@@ -18,7 +18,7 @@ navigation_weight: 2
 
 <div class="two-grid no-highlight" id="wiki-list">
     {% assign wikis = site.wiki %}{% for wiki in wikis %}
-        {% if wiki.image-path and wiki.ignore_listing != true %}
+        {% if wiki.image_path and wiki.ignore_listing != true %}
             {% include wiki_widget.html wiki=wiki %}
         {% endif %}
     {% endfor %}

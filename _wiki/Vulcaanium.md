@@ -3,7 +3,7 @@ title: "Vulcaanium"
 layout: wiki/default
 og_description: "Vulcaanium is a rare mineral obtained from Vulcaanium Ore or loot chests"
 categories: [ item, gem ]
-image-path: "item_entity/vulcaanium.gif"
+image_path: "item_entity/vulcaanium.gif"
 ---
 
 Vulcaanium is a rare mineral obtained from [Vulcaanium Ore](/wiki/Vulcaanium_Ore) or loot chests. Their main use is their ability to be converted into [Tempite](/wiki/Tempite) via a [Tempite Stone](/wiki/Tempite_Stone).

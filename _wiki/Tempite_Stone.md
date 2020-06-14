@@ -5,7 +5,7 @@ peekaboo: true
 new: true
 description: "The Tempite Stone is needed to power all the machines in TTB. Without it, your machines can't work!"
 categories: [ block, machine ]
-image-path: "tempite_stone.png"
+image_path: "tempite_stone.png"
 ---
 
 <!-- Obtaining -->

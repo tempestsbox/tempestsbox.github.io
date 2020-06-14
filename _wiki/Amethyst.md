@@ -3,7 +3,7 @@ title: "Amethyst"
 layout: wiki/default
 og_description: "Amethyst is a rare mineral obtained from Amethyst Ore or loot chests"
 categories: [ item, gem ]
-image-path: "item_entity/amethyst.gif"
+image_path: "item_entity/amethyst.gif"
 ---
 
 Amethyst is a rare mineral obtained from [Amethyst Ore](/wiki/Amethyst_Ore) or loot chests. Their main use is their ability to be converted into [Tempite](/wiki/Tempite) via a [Tempite Stone](/wiki/Tempite_Stone).

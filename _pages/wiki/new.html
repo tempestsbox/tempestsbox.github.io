@@ -16,7 +16,7 @@ layout: default
 
 <div class="two-grid no-highlight" id="wiki-list">
     {% assign wikis = site.wiki %}{% for wiki in wikis %}
-        {% if wiki.image-path and wiki.new == true %}
+        {% if wiki.image_path and wiki.new == true %}
             {% include wiki_widget.html wiki=wiki %}
         {% endif %}
     {% endfor %}
