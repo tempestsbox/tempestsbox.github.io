@@ -9,6 +9,13 @@ html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     scroll-behavior: smooth;
+
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }
 body {
     margin: 0;
@@ -617,4 +624,40 @@ h4:not(.two-grid):not(.subtitle) {
     height: 100%;
     width: 100%;
     position: absolute;
+}
+
+a.bubble {
+    background-color: #292929;
+}
+img {
+    color: transparent;
+    transition: all 0.2s ease;
+}
+img.broken {
+    font-weight: bold;
+    line-height: 2;
+    text-align: center;
+
+    color: #fff;
+    background-color: #333333;
+    
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+}
+img.broken:before {
+    top: 10px;
+    content: "This image does not exist yet 😥";
+    font-weight: normal;
+    display: block;
+    font-size: 14px;
+}
+img.broken:after { 
+    content: "tempestsbox.github.io" attr(src);
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: normal;
+    color: rgb(185, 185, 185);
 }
