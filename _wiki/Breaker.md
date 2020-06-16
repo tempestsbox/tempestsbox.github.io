@@ -20,7 +20,7 @@ image_path: "breaker.png"
 When powered, the Breaker will break blocks directly in front of its front face.
 {% include fig.html src="/assets/docs/breaker/demo.png" border=true %}
 #### Ascension
-Ascension of the {{ page.title }} increases the distance that it breaks by `FORWARDS +1` per level.
+Ascension of the {{ page.title }} increases the distance broken by 1 per level.
 #### Mysteriosity
 The {{ page.title }} does not have Mysterious functionality.
 - *See [Machine § Mysteriosity](/wiki/Machine#mysteriosity)*
