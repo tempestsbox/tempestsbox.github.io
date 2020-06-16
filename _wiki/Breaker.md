@@ -4,7 +4,7 @@ layout: wiki/default
 new: true
 description: "The Breaker breaks blocks in the direction it faces"
 extra_description: "."
-categories: [ block, machine ]
+categories: [ block, directional, machine ]
 image_path: "breaker.png"
 ---
 

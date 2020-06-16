@@ -3,7 +3,7 @@ title: "Eckspei Locker"
 layout: wiki/default
 new: true
 og_description: "The Eckspei Locker absorbs experience orbs in the direction it faces, and is used to manage Eckspei Rods"
-categories: [ block, machine ]
+categories: [ block, directional, machine ]
 image_path: "eckspei_locker.png"
 ---
 

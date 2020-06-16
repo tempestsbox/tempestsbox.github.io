@@ -3,7 +3,7 @@ title: "Tempite Wire"
 layout: wiki/default
 new: true
 description: "Description"
-categories: [ item ]
+categories: [ block, tempite ]
 image_path: "tempite_wire.gif"
 ---
 
