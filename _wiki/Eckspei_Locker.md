@@ -14,7 +14,7 @@ The {{ page.title }} absorbs {% include mcwiki.html url="Experience_Orb" title="
 {% include text/obtaining/breaking/barrel.md %}
 
 ### Crafting
-{% include recipe.html src="/assets/docs/eckspei_locker/recipe.png" ingredients="1 Vulcaanium Crystal, 5 Iron Ingots, 2 Glass Panes, 1 Amethyst, and 1 Hopper" %}
+{% include recipe.html src="/assets/docs/eckspei_locker/recipe.png" ingredients="1 Vulcaanium Crystal, 6 Iron Ingots, 1 Glass Pane, 1 Glass Bottle, and 1 Observer" %}
 
 ## Usage
 ### Machine

@@ -13,7 +13,7 @@ image_path: "breaker.png"
 {% include text/obtaining/breaking/barrel.md %}
 
 ### Crafting
-{% include recipe.html src="/assets/docs/breaker/recipe.png" ingredients="2 Vulcaanium Crystals, 6 Blackstone, 2 Iron Bars, and 1 Amethyst" %}
+{% include recipe.html src="/assets/docs/breaker/recipe.png" ingredients="4 Vulcaanium Crystals, 7 Red Nether Bricks, 1 Lava Bucket, and 1 Iron Bar" %}
 
 ## Usage
 ### Machine

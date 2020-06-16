@@ -13,7 +13,7 @@ image_path: "acronite_cage.png"
 {% include text/obtaining/breaking/barrel.md %}
 
 ### Crafting
-{% include recipe.html src="/assets/docs/acronite_cage/recipe.png" ingredients="2 Vulcaanium Crystals, 6 Blackstone, 2 Iron Bars, and 1 Amethyst" %}
+{% include recipe.html src="/assets/docs/acronite_cage/recipe.png" ingredients="2 Vulcaanium Crystals, 7 Blackstone, 1 Dispenser, and 1 Iron Bar" %}
 
 ## Usage
 ### Machine
