@@ -683,4 +683,7 @@ img.broken:after {
         content: "";
         display: block;
     }
+    img.smaller {
+        min-width: 100%;
+    }
 }
