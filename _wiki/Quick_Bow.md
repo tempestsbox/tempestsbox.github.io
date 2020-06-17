@@ -1,5 +1,6 @@
 ---
 title: "Quick Bow"
+reg_id: "quick_bow"
 layout: wiki/default
 description: "Description"
 categories: [ item ]

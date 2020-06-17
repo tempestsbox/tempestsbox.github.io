@@ -1,5 +1,6 @@
 ---
 title: "Tempite Stone"
+reg_id: "tempite_stone"
 layout: wiki/default
 peekaboo: true
 new: true
@@ -27,7 +28,7 @@ When broken in any way, the Tempite Stone will drop its Tempite in the form of A
 
 <!-- Data Values -->
 <!-- ID -->
-{% include data_table/data_values.html block_name=page.title block_id="tempite_stone" block_texture_path="block/tempite_stone" %}
+{% include data_table/data_values.html block_name=page.title block_id=page.reg_id block_texture_path="block/tempite_stone" %}
 
 ## Gallery
 {% include fig.html src="/assets/docs/tempite_stone/semi_powered.gif" caption="A Tempite Stone getting powered without any Tempite<br>(semi-powered)" %}

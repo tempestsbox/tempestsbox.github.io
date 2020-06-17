@@ -1,5 +1,6 @@
 ---
 title: "Restoration Tome"
+reg_id: "restoration_tome"
 layout: wiki/default
 description: "Description"
 categories: [ item ]

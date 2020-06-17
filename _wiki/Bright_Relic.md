@@ -1,5 +1,6 @@
 ---
 title: "Bright Relic"
+reg_id: "breaker"
 layout: wiki/default
 description: "Description"
 categories: [ item, relic ]

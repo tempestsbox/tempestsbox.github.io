@@ -1,5 +1,6 @@
 ---
 title: "Eckspei Locker"
+reg_id: "eckspei_locker"
 layout: wiki/default
 new: true
 og_description: "The Eckspei Locker absorbs experience orbs in the direction it faces, and is used to manage Eckspei Rods"
@@ -30,18 +31,18 @@ The {{ page.title }} does not have Mysterious functionality.
 - *See [{{ page.title }} § Machine ](#machine)*
 
 {{ page.title }}s can be powered from the back by [Tempite Wire](/wiki/Tempite_Wire).
-{% include data_table/machine_cost.html block_name=page.title block_id="eckspei_locker" block_texture_path="block/eckspei_locker_front" cost_base=10 cost_ascension=2 cost_reduction=1 %}
+{% include data_table/machine_cost.html block_name=page.title block_texture_path="block/eckspei_locker_front" cost_base=10 cost_ascension=2 cost_reduction=1 %}
 ### Eckspei Rod
 If an [Eckspei Rod](/wiki/Eckspei_Rod) is placed in the first crystal-slot of an {{ page.title }}, the [Eckspei Rod](/wiki/Eckspei_Rod) will gain 1 durability per tick - 20 durability per second.
 
 [`Demo`](https://youtu.be/dpjh2LFJU0E)
 
 ### Breaking
-{% include data_table/obtaining/breaking/barrel.html block_name=page.title block_id="eckspei_locker" block_texture_path="block/eckspei_locker_front" %}
+{% include data_table/obtaining/breaking/barrel.html block_name=page.title block_texture_path="block/eckspei_locker_front" %}
 
 <!-- Data Values -->
 <!-- ID -->
-{% include data_table/data_values.html block_name=page.title block_id="eckspei_locker" block_texture_path="block/eckspei_locker_front" %}
+{% include data_table/data_values.html block_name=page.title block_id=page.reg_id block_texture_path="block/eckspei_locker_front" %}
 
 ## Gallery
 {% include fig.html src="/assets/docs/eckspei_locker/display.png" caption="Eckspei Locker action bar experience display" %}

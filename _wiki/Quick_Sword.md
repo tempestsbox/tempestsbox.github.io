@@ -1,5 +1,6 @@
 ---
 title: "Quick Sword"
+reg_id: "quick_sword"
 layout: wiki/default
 description: "Description"
 categories: [ item ]

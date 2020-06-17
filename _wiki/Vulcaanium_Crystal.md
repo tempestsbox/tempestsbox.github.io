@@ -1,5 +1,6 @@
 ---
 title: "Vulcaanium Crystal"
+reg_id: "vulcaanium_crystal"
 layout: wiki/default
 new: true
 description: "Description"

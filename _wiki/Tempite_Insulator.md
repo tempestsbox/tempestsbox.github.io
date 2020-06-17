@@ -1,5 +1,6 @@
 ---
 title: "Tempite Insulator"
+reg_id: "tempite_insulator"
 layout: wiki/default
 description: "Description"
 categories: [ block, item, tempite ]

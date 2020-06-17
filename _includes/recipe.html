@@ -2,4 +2,4 @@ The {{ page.title }} is crafted with {{ include.ingredients }}.
 
 <img class="ignore-defaults" style="padding-left: 10px;" src="/assets/docs/tempest_crafter/ui-title.png" alt="tempest_crafter/ui-title.png" />
 <br>
-<img class="ignore-defaults" src="{{ include.src }}" alt="{{ include.src }}" />
+<img class="ignore-defaults" src="{% if include.src %}{{ include.src }}{% else %}/assets/docs/{{ page.reg_id }}/recipe.png{% endif %}" alt="{{ include.src }}" />

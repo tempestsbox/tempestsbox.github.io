@@ -1,5 +1,6 @@
 ---
 title: "Vulcaanium"
+reg_id: "vulcaanium"
 layout: wiki/default
 og_description: "Vulcaanium is a rare mineral obtained from Vulcaanium Ore or loot chests"
 categories: [ item, gem ]

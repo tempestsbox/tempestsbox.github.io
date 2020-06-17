@@ -1,5 +1,6 @@
 ---
 title: "Dark Relic"
+reg_id: "dark_relic"
 layout: wiki/default
 description: "Description"
 categories: [ item, relic ]

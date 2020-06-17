@@ -1,5 +1,6 @@
 ---
 title: "Tempite Wire"
+reg_id: "tempite_wire"
 layout: wiki/default
 new: true
 description: "Description"

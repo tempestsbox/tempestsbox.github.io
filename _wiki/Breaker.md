@@ -1,5 +1,6 @@
 ---
 title: "Breaker"
+reg_id: "breaker"
 layout: wiki/default
 new: true
 description: "The Breaker breaks blocks in the direction it faces"
@@ -29,11 +30,11 @@ The {{ page.title }} does not have Mysterious functionality.
 - *See [{{ page.title }} § Machine ](#machine)*
 
 {{ page.title }}s can be powered from the back by [Tempite Wire](/wiki/Tempite_Wire).
-{% include data_table/machine_cost.html block_name=page.title block_id="breaker" block_texture_path="block/breaker_front" cost_base=20 cost_ascension=4 cost_reduction=3 %}
+{% include data_table/machine_cost.html block_name=page.title block_texture_path="block/breaker_front" cost_base=20 cost_ascension=4 cost_reduction=3 %}
 
 ### Breaking
-{% include data_table/obtaining/breaking/barrel.html block_name=page.title block_id="breaker" block_texture_path="block/breaker_front" %}
+{% include data_table/obtaining/breaking/barrel.html block_name=page.title block_texture_path="block/breaker_front" %}
 
 <!-- Data Values -->
 <!-- ID -->
-{% include data_table/data_values.html block_name=page.title block_id="breaker" block_texture_path="block/breaker_front" %}
+{% include data_table/data_values.html block_name=page.title block_id=page.reg_id block_texture_path="block/breaker_front" %}
