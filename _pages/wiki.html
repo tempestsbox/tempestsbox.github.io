@@ -14,7 +14,7 @@ navigation_weight: 2
 <h2 center title class="no-highlight">All Wikis</h2>
 <hr>
 
-<input center id="wiki-search" oninput="search()" placeholder=" Search..." />
+{% include wiki_search_bar.html %}
 
 <div class="two-grid no-highlight" id="wiki-list">
     {% assign wikis = site.wiki %}{% for wiki in wikis %}

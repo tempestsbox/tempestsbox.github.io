@@ -15,7 +15,7 @@ layout: default
 
 <br>
 
-<input center id="wiki-search" oninput="search()" placeholder=" Search..." />
+{% include wiki_search_bar.html %}
 
 <div class="two-grid no-highlight" id="wiki-list">
     {% assign wikis = site.wiki %}{% for wiki in wikis %}
