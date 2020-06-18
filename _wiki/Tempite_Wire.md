@@ -5,7 +5,7 @@ layout: wiki/default
 new: true
 description: "Description"
 categories: [ block, tempite ]
-image_path: "tempite_wire.gif"
+image_path: "tempite_wire/default.gif"
 ---
 
 <!-- Data Values -->

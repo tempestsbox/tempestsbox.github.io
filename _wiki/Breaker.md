@@ -14,7 +14,7 @@ image_path: "breaker.png"
 {% include text/obtaining/breaking/barrel.md %}
 
 ### Crafting
-{% include recipe.html src="/assets/docs/breaker/recipe.png" ingredients="4 Vulcaanium Crystals, 7 Red Nether Bricks, 1 Lava Bucket, and 1 Iron Bar" %}
+{% include recipe.html ingredients="4 Vulcaanium Crystals, 7 Red Nether Bricks, 1 Lava Bucket, and 1 Iron Bar" %}
 
 ## Usage
 ### Machine

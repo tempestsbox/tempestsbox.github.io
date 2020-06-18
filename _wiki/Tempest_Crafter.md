@@ -13,7 +13,7 @@ image_path: "tempest_crafter.png"
 
 Due to technical limitations, all blocks with a custom UI are underlyingly {% include mcwiki.html url="Barrel" title="barrels" %}, meaning they have wooden properties.
 ### Crafting
-![tempest_crafter/recipe.png](/assets/docs/tempest_crafter/recipe.png)
+{% include recipe.html ingredients="2 Amethyst, 1 Glass, 2 Crying Obsidian, 1 End Crystal, and 3 Gold Blocks" %}
 ### In-World Creation
 ![tempest_crafter/crafting.gif](/assets/docs/tempest_crafter/crafting.gif)
 
@@ -26,4 +26,4 @@ Right click the Tempest Crafter to open the crafting UI. Here, you can craft TTB
 
 <!-- Data Values -->
 <!-- ID -->
-{% include data_table/data_values.html block_name="Tempest Crafter" block_id="tempest_crafter" block_texture_path="block/tempest_crafter" %}
+{% include data_table/data_values.html block_name="Tempest Crafter" block_id="tempest_crafter" block_texture_path="block/tempest_crafter_top" %}

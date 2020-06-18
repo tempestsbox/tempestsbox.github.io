@@ -2,7 +2,7 @@
 title: "Amethyst"
 reg_id: "amethyst"
 layout: wiki/default
-og_description: "Amethyst is a rare mineral obtained from Amethyst Ore or loot chests"
+widget_description: "Amethyst is a rare mineral obtained from Amethyst Ore or loot chests"
 categories: [ item, gem ]
 image_path: "item_entity/amethyst.gif"
 ---

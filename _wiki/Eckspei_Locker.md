@@ -3,7 +3,7 @@ title: "Eckspei Locker"
 reg_id: "eckspei_locker"
 layout: wiki/default
 new: true
-og_description: "The Eckspei Locker absorbs experience orbs in the direction it faces, and is used to manage Eckspei Rods"
+widget_description: "The Eckspei Locker absorbs experience orbs in the direction it faces, and is used to manage Eckspei Rods"
 categories: [ block, directional, machine ]
 image_path: "eckspei_locker.png"
 ---
@@ -15,7 +15,7 @@ The {{ page.title }} absorbs {% include mcwiki.html url="Experience_Orb" title="
 {% include text/obtaining/breaking/barrel.md %}
 
 ### Crafting
-{% include recipe.html src="/assets/docs/eckspei_locker/recipe.png" ingredients="1 Vulcaanium Crystal, 6 Iron Ingots, 1 Glass Pane, 1 Glass Bottle, and 1 Observer" %}
+{% include recipe.html ingredients="1 Vulcaanium Crystal, 6 Iron Ingots, 1 Glass Pane, 1 Glass Bottle, and 1 Observer" %}
 
 ## Usage
 ### Machine
