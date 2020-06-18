@@ -11,15 +11,7 @@ image_path: "item_entity/mysterious_crystal.gif"
 
 ## Obtaining
 ### Crafting
-**Note: this section is janky and will be compressed into a GIF.** If the top of this page does not say this wiki is a work in progress, [create an issue](https://github.com/{{ site.github_user }}/{{ site.github_user }}.github.io/issues/new).
-
-<br>
-
-{%- comment -%} {% include recipe.html ingredients="4 Mysterious Dust and 1 Mysterious" gif=true %} {% endcomment %}
-{% include recipe.html src="/assets/docs/mysterious_crystal/recipe_crystal_amethyst.png" ingredients="4 Mysterious Dust, 4 Amethyst Crystals, and 1 Amethyst" %}
-{% include recipe.html src="/assets/docs/mysterious_crystal/recipe_crystal_combined_amethyst.png" ingredients="4 Mysterious Dust, 2 Amethyst Crystals, 2 Vulcaanium Crystals, and 1 Amethyst" %}
-{% include recipe.html src="/assets/docs/mysterious_crystal/recipe_crystal_vulcaanium.png" ingredients="4 Mysterious Dust, 4 Vulcaanium Crystals, and 1 Amethyst" %}
-{% include recipe.html src="/assets/docs/mysterious_crystal/recipe_crystal_combined_vulcaanium.png" ingredients="4 Mysterious Dust, 2 Vulcaanium Crystals, 2 Amethyst Crystals, and 1 Amethyst" %}
+{% include recipe.html ingredients="4 Mysterious Dust, 4 of any Gem-Crystal, and 1 Amethyst" gif=true %}
 
 ## Usage
 ### Tempite Component
