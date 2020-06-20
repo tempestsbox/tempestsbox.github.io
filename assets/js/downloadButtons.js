@@ -3,28 +3,30 @@ async function fetchGitHubArchive(repo, element) {
     let response = await fetch("https://api.github.com/repos/" + repo + "/releases");
     let data = await response.json();
     if (data[0]) {
-        updateButton(data[0].tag_name);
+        updateButton(repo, data[0].tag_name, element);
         return;
     }
     response = await fetch("https://api.github.com/repos/" + repo);
     data = await response.json();
 
     console.log("Updating button");
-
+    updateButton(repo, data.default_branch, element);
+}
+function updateButton(repo, archive, element) {
     switch (element) {
         case "github":
             textElement = document.getElementById(element);
 
-            textElement.innerHTML = "<i class=\"fab fa-github\"></i> Download TTB (Direct, " + data.default_branch + ")";
-            document.getElementById(element + "-link").href = "https://github.com/" + repo + "/archive/" + data.default_branch + ".zip";
+            textElement.innerHTML = "<i class=\"fab fa-github\"></i> Download TTB (Direct, " + archive + ")";
+            document.getElementById(element + "-link").href = "https://github.com/" + repo + "/archive/" + archive + ".zip";
 
             console.log("Updated button" + textElement);
             break;
         case "github-extras":
             textElement = document.getElementById(element);
 
-            textElement.innerHTML = "<i class=\"fab fa-github\"></i> Download TTB Extras (" + data.default_branch + ")";
-            document.getElementById(element + "-link").href = "https://github.com/" + repo + "/archive/" + data.default_branch + ".zip";
+            textElement.innerHTML = "<i class=\"fab fa-github\"></i> Download TTB Extras (" + archive + ")";
+            document.getElementById(element + "-link").href = "https://github.com/" + repo + "/archive/" + archive + ".zip";
 
             console.log("Updated button" + textElement);
             break;
