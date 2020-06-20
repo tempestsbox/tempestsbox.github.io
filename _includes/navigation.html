@@ -1,6 +1,4 @@
 <nav id="navbar">
-    {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}{% for p in navigation_pages %}{% if p.navigation_weight %}
-        <a class="link item{% if p.url == page.url %} active{% endif %}" href="{{ p.url }}"><i class="{{ p.prefix-icon }}"></i><span>{{ p.title }}</span></a><br class="navbar-split">{% endif %}{% endfor %}
-    {% assign navigation_pages = site.pages | sort: 'navigation_weight' %}{% for p in navigation_pages %}{% if p.navigation_weight %}
-        <a class="link item{% if p.url == page.url or page.url contains p.url and p.url != site.url %} active{% endif %}" href="{{ p.url }}"><i class="{{ p.prefix-icon }}"></i><span>{{ p.title }}</span></a><br class="navbar-split">{% endif %}{% endfor %}
+    {% assign navigation_pages = site.pages | concat: site.html_pages | sort: 'navigation_weight' %}{% for p in navigation_pages %}{% if p.navigation_weight %}
+        <a id="{{ p.title }}" class="link item{% if p.url == page.url or page.url contains p.url and p.path != 'index.html' %} active{% endif %}" href="{{ p.url }}" style="font-size: {% if p.path == 'index.html' %}color: #fff; 20{% else %}12{% endif %}px;"><i class="{{ p.prefix_icon }}"></i><span>{{ p.title }}</span></a><br class="navbar-split">{% endif %}{% endfor %}
     </nav>

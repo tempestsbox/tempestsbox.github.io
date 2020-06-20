@@ -25,7 +25,7 @@ function updateButton(repo, archive, element) {
         case "github-extras":
             textElement = document.getElementById(element);
 
-            textElement.innerHTML = "<i class=\"fab fa-github\"></i> Download TTB Extras (" + archive + ")";
+            textElement.innerHTML = "<i class=\"fas fa-plus\"></i> Download TTB Extras (" + archive + ")";
             document.getElementById(element + "-link").href = "https://github.com/" + repo + "/archive/" + archive + ".zip";
 
             console.log("Updated button" + textElement);

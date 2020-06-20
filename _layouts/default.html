@@ -28,7 +28,7 @@
 <body>
     <header id="header" class="no-highlight">
         {% include header.html %}
-        {%- if page.url contains "wiki" -%}{% include wiki_header.html %}{%- endif -%}
+        {%- if page.url contains "wiki" or page.wiki_header == true -%}{% include wiki_header.html %}{%- endif -%}
     </header>
 
     <div id="wrapper">

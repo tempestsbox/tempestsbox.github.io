@@ -1,19 +1,10 @@
 <div id="download-button" class="no-highlight">
-    <script>var textElement = undefined;</script>
-
     <a href="https://curseforge.com/{{ site.curseforge-link }}">
         <button class="download-btn" id="curseforge">
             <i class="fa fa-download"></i> Download TTB (CurseForge) </button>
     </a>
 
-    <div style="height: 8px;"><br></div><a class="download-btn" id="github-extras-link">
-        <button class="download-btn" id="github-extras">
-            <i class="fas fa-plus"></i> Loading version... </button>
-    </a>
-    <script src="/assets/js/downloadButtons.js"></script>
-    <script>
-        fetchGitHubArchive("{{ site.github_user }}/{{ site.github_repo }}-extras", "github-extras");
-    </script>
+    {% include download_extras.html %}
 
     <br><br>
 

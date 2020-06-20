@@ -176,15 +176,29 @@ template {
 }
 #navbar .item {
     font-weight: 700;
-    padding: 10px 0;
-    margin: 0 30px;
+    margin: 0 20px;
 }
 #navbar .item i {
     margin-right: 10px;
 }
-#navbar .item.active {
+#navbar a.item {
+    border-bottom: none;
+}
+#navbar .item#About {
     color: #d581ff;
-    border-bottom: solid 2px #d581ff;
+    padding-bottom: 4px;
+}
+#navbar .item#About:hover {
+    color: #db92ff;
+}
+#navbar .item.active {
+    border-bottom: solid 2px currentColor;
+}
+#navbar .item:not(.active) {
+    color: #ffffffb4;
+}
+#navbar .item:not(.active):hover {
+    color: #ffffff;
 }
 #wiki-header {
     padding: 5px 0;
@@ -214,7 +228,7 @@ template {
 #wrapper .page-content {
     max-width: 800px;
 }
-.fab.prefix-icon,.fas.prefix-icon {
+.fab.prefix_icon,.fas.prefix_icon {
     margin-right: 8px;
 }
 .portfolio {
@@ -363,7 +377,7 @@ body {
 }
 @media only screen and (max-width: 600px) {
     body {
-        font-size: 15px
+        font-size: 15px;
     };
 }
 body {
@@ -497,8 +511,12 @@ div.collapsible-content a button.download-btn#classic {
     border-bottom: dotted 1px #aaa;
 }
 button.download-btn:hover, button.download-coll:hover, button.download-btn#classic:hover, button.collapsible-active {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+button.minor:not(:not(button.download-btn:hover, button.download-coll:hover, button.download-btn#classic:hover, button.collapsible-active)) {
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .no-highlight {
