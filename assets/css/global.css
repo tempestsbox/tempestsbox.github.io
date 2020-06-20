@@ -454,6 +454,9 @@ button.download-btn#curseforge {
 button.download-btn#github {
     background-color: rgb(70, 70, 70);
 }
+button.download-btn#github-extras {
+    background-color: rgb(183, 149, 11);
+}
 button.download-coll#classic {
     background-color: rgba(70, 70, 70, 0.5);
 }
