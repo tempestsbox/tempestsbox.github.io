@@ -497,7 +497,8 @@ div.collapsible-content a button.download-btn#classic {
     border-bottom: dotted 1px #aaa;
 }
 button.download-btn:hover, button.download-coll:hover, button.download-btn#classic:hover, button.collapsible-active {
-    padding: 12px 40px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .no-highlight {
