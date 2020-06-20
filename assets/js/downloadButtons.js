@@ -23,7 +23,7 @@ async function fetchGitHubArchive(repo, element) {
         case "github-extras":
             textElement = document.getElementById(element);
 
-            textElement.innerHTML = "<i class=\"fab fa-github\"></i> Direct Download (" + data.default_branch + ")";
+            textElement.innerHTML = "<i class=\"fab fa-github\"></i> Download TTB Extras (" + data.default_branch + ")";
             document.getElementById(element + "-link").href = "https://github.com/" + repo + "/archive/" + data.default_branch + ".zip";
 
             console.log("Updated button" + textElement);
