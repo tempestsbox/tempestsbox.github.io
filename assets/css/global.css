@@ -177,6 +177,7 @@ template {
 #navbar .item {
     font-weight: 700;
     margin: 0 20px;
+    text-align: center;
 }
 #navbar .item i {
     margin-right: 10px;
