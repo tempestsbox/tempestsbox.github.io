@@ -4,6 +4,8 @@ layout: article
 og_description: "Say goodbye to ver/1.16 - here's a first alpha release! Remember that this is an alpha release, so not everything from classic TTB will be implemented. On the sa..."
 ---
 
+**Update** We've just released a quick `a2` hotfix
+
 Say goodbye to `ver/1.16` - here's a first alpha release! Remember that this *is* an alpha release, so not everything from classic TTB will be implemented. On the same topic, if you find any bugs, please [send them to us via the issue tracker](https://github.com/{{ site.github_user }}/{{ site.github_repo }}/issues/new)!
 
 You can find a more detailed explanation of a few of the features below at our work-in-progress TTB wiki - [tempestsbox.github.io/wiki](/wiki)
@@ -13,7 +15,12 @@ If you'd like to explore a custom structure, run `/tag @s add ttb_debug`; then, 
 
 [`Installation Instructions`](/download#installation-instructions)
 
-### Changelog
+### Changes in `0.8.0+a2`
+```diff
+* Fixed missing Item Frame item model
+```
+
+### Changes in `0.8.0+a1`
 In comparison to classic 0.7\*
 ```diff
 + Tempite Stone
