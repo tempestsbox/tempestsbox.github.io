@@ -22,3 +22,6 @@ collections:
   pages:
     output: true
     permalink: /:path
+  articles:
+    output: true
+    permalink: /article/:path

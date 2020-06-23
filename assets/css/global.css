@@ -634,6 +634,11 @@ code {
     border-radius: 0.2em;
     padding: 0.2em;
 }
+pre code {
+    display: block;
+    padding: 2px;
+    padding-left: 10px;
+}
 
 h4:not(.two-grid):not(.subtitle) {
     background-color: rgba(255, 255, 255, 0.04);
