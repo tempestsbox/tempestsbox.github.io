@@ -5,7 +5,7 @@ layout: default
 <p style='font-size: 40px;'>Redirecting to {{ page.redirect_url }}</p>
 
 <script>
-    const newurl = "https://{{ site.url }}/{{ page.redirect_url }}";
+    const newurl = "{{ site.url }}/{{ page.redirect_url }}";
     document.addEventListener('DOMContentLoaded', (event) => {
         window.location.href = newurl;
         window.location.replace = newurl;
