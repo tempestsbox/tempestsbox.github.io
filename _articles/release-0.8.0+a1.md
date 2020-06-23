@@ -1,7 +1,7 @@
 ---
 title: "TTB v0.8.0 alpha 1 is now out!"
 layout: article
-og_description: "v0.8.0+a1 for the Tempest's Box is now out to test!"
+og_description: "Say goodbye to ver/1.16 - here's a first alpha release! Remember that this is an alpha release, so not everything from classic TTB will be implemented. On the sa..."
 ---
 
 Say goodbye to `ver/1.16` - here's a first alpha release! Remember that this *is* an alpha release, so not everything from classic TTB will be implemented. On the same topic, if you find any bugs, please [send them to us via the issue tracker](https://github.com/{{ site.github_user }}/{{ site.github_repo }}/issues/new)!
