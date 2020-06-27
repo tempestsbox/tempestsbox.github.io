@@ -4,7 +4,7 @@ layout: article
 og_description: "Say goodbye to ver/1.16 - here's a first alpha release! Remember that this is an alpha release, so not everything from classic TTB will be implemented. On the sa..."
 ---
 
-**Update** We've just released a quick `a2` hotfix
+**Update** We've just released `a2`/`a3` hotfixes
 
 Say goodbye to `ver/1.16` - here's a first alpha release! Remember that this *is* an alpha release, so not everything from classic TTB will be implemented. On the same topic, if you find any bugs, please [send them to us via the issue tracker](https://github.com/{{ site.github_user }}/{{ site.github_repo }}/issues/new)!
 
@@ -13,14 +13,25 @@ You can find a more detailed explanation of a few of the features below at our w
 Most items added by TTB are currently inaccessible in survival mode - to get them, **run `/loot give @s loot ttb:items/<your_item_name>`** in chat.  
 If you'd like to explore a custom structure, run `/tag @s add ttb_debug`; then, fly around the world until you see the structure you want in chat, and teleport to the coordinates given. Note that the only non-ore structures that currently spawn in this release are in snowy biomes.
 
-[`Installation Instructions`](/download#installation-instructions)
+[Installation Instructions](/download#installation-instructions)
 
-### Changes in `0.8.0+a2`
+---
+
+### Changes in `0.8.0+a3` (27/06/20)
+```diff
+* Fix #10 - Dungeon corridors stop more frequently than they should
+```
+
+---
+
+### Changes in `0.8.0+a2` (23/06/20)
 ```diff
 * Fixed missing Item Frame item model
 ```
 
-### Changes in `0.8.0+a1`
+---
+
+### Changes in `0.8.0+a1` (23/06/20)
 In comparison to classic 0.7\*
 ```diff
 + Tempite Stone
