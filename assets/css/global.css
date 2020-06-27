@@ -185,11 +185,11 @@ template {
 #navbar a.item {
     border-bottom: none;
 }
-#navbar .item#About {
+#navbar .item#Home {
     color: #d581ff;
     padding-bottom: 4px;
 }
-#navbar .item#About:hover {
+#navbar .item#Home:hover {
     color: #db92ff;
 }
 #navbar .item.active {
