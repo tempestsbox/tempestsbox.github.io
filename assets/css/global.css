@@ -459,24 +459,27 @@ div#download-coll-installation-content.active {
     border: solid rgb(70, 70, 70) .1em;
     margin-bottom: 1em;
 }
-button.download-btn, button.download-coll {
+button.large, button.download-coll {
     padding: 12px 30px;
     transition: all 0.2s ease;
 }
-button.download-btn#curseforge {
+button#curseforge {
     background-color: purple;
 }
-button.download-btn#github {
+button#github {
     background-color: rgb(70, 70, 70);
 }
-button.download-btn#github-extras {
+button#github-extras {
     background-color: rgb(183, 149, 11);
 }
 button.download-coll#classic {
     background-color: rgba(70, 70, 70, 0.5);
 }
-button.download-btn#classic {
+button#classic {
     background-color: rgb(51, 51, 51);
+}
+button#report-bug {
+    background-color: rgb(231, 76, 60);
 }
 button.minor {
     font-size: 18px;
@@ -505,17 +508,17 @@ div.collapsible-content {
     transition: all 0.2s ease;
     margin-top: 1em;
 }
-div.collapsible-content a button.download-btn#classic {
+div.collapsible-content a button#classic {
     background-color: rgb(41, 41, 41);
     margin-bottom: .5em;
     font-size: .9em;
     border-bottom: dotted 1px #aaa;
 }
-button.download-btn:hover, button.download-coll:hover, button.download-btn#classic:hover, button.collapsible-active {
+button.large:hover, button.download-coll:hover, button#classic:hover, button.collapsible-active {
     padding-left: 45px;
     padding-right: 45px;
 }
-button.minor:not(:not(button.download-btn:hover, button.download-coll:hover, button.download-btn#classic:hover, button.collapsible-active)) {
+button.minor:not(:not(button.large:hover, button.download-coll:hover, button#classic:hover, button.collapsible-active)) {
     padding-left: 32px;
     padding-right: 32px;
 }

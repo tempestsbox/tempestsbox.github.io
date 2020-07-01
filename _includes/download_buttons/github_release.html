@@ -1,0 +1,8 @@
+<a class="large" id="github-link">
+    <button class="large minor" id="github">
+        <i class="fab fa-github"></i> Loading version... </button>
+</a>
+<script src="/assets/js/downloadButtons.js"></script>
+<script>
+    fetchGitHubArchive("{{ site.github_user }}/{{ site.github_repo }}", "github", false);
+</script>
