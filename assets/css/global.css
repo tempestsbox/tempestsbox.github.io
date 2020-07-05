@@ -782,12 +782,11 @@ img.broken:after {
     display: none;
 }
 .site-nav .page-link {
-    color: #111;
     line-height: 1.5;
     padding-bottom: 2px;
 }
 .site-nav .page-link.active {
-    border-bottom: solid 4px currentColor;
+    font-weight: bold;
 }
 .site-nav .page-link:not(:last-child) {
     margin-right: 20px;
@@ -835,6 +834,10 @@ img.broken:after {
         padding: 5px 10px;
         padding-left: 8px;
         margin-left: 20px;
+        border-bottom: none;
+    }
+    .site-nav .page-link.active {
+        font-weight: bold;
     }
     .site-nav .page-link:not(:last-child) {
         margin-right: 0;

@@ -15,7 +15,7 @@
             {% assign navigation_pages = site.pages | concat: site.html_pages | sort: 'navigation_weight' %}
             {% for p in navigation_pages %}
                 {% if p.navigation_weight %}
-                    <a class='page-link{% if p.url == page.url or page.url contains p.url and p.path != 'index.html' %} active{% endif %}' href='{{ p.url }}'><i class='{{ p.prefix_icon }}'></i> {{ p.title }}</a>
+                    <a class='page-link{% if p.url == page.url or page.url contains p.url and p.path != "index.html" %} active{% endif %}' style='border-bottom: none;' href='{{ p.url }}'><i class='{{ p.prefix_icon }}'></i> {{ p.title }}</a>
                 {% endif %}
             {% endfor %}
         </div>
