@@ -784,6 +784,10 @@ img.broken:after {
 .site-nav .page-link {
     color: #111;
     line-height: 1.5;
+    padding-bottom: 2px;
+}
+.site-nav .page-link.active {
+    border-bottom: solid 4px currentColor;
 }
 .site-nav .page-link:not(:last-child) {
     margin-right: 20px;
