@@ -1,0 +1,37 @@
+<script>
+    async function fetchGitHubData(repo, type) {
+        console.log("Fetching API data for repo " + repo);
+
+        let response;
+        switch (type) {
+            case "releases":
+                response = await fetch("https://api.github.com/repos/" + repo + "/releases");
+                break;
+            case "commits":
+                response = await fetch("https://api.github.com/repos/" + repo + "/commits");
+                break;
+        }
+
+        let data = await response.json();
+
+        for (i = 0; i < 10; i++) {
+            if (i > data.length - 1) return;
+
+            let title;
+            switch (type) {
+                case "releases":
+                    title = data[i].name;
+                    break;
+                case "commits":
+                    title = data[i].commit.message;
+                    break;
+            }
+
+            console.log(title);
+        }
+    }
+
+    let repo = "{{ site.github_user }}/{{ site.github_repo }}";
+    fetchGitHubData(repo, "releases");
+    fetchGitHubData(repo, "commits");
+</script>
