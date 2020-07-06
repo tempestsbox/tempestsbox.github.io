@@ -843,3 +843,28 @@ img.broken:after {
         margin-right: 0;
     }
 }
+
+.builds-table {
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: none;
+}
+.builds-table > tbody > tr > td {
+    padding: 0 5px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    border-radius: 2px;
+    border: none;
+}
+.builds-table > tbody > tr:first-child {
+    background-color: purple;
+}
+.builds-table > tbody > tr > td:last-child {
+    padding-right: 18px;
+}
+.builds-table > tbody > tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
