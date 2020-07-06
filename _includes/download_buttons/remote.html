@@ -5,6 +5,7 @@
         let response = await fetch("https://api.github.com/repos/" + repo + "/" + type);
         let data = await response.json();
 
+        let output = "";
         for (i = 0; i < 10; i++) {
             if (i > data.length - 1) return;
 
@@ -18,8 +19,15 @@
                     break;
             }
 
+            title = title.split("\n");
+            title = title[0];
+
             console.log(title);
+
+            output += (title);
+            if (i != data.length - 1) output += "\n";
         }
+        console.log(output);
     }
 
     let repo = "{{ site.github_user }}/{{ site.github_repo }}";
