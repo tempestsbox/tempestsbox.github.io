@@ -2,16 +2,7 @@
     async function fetchGitHubData(repo, type) {
         console.log("Fetching API data for repo " + repo);
 
-        let response;
-        switch (type) {
-            case "releases":
-                response = await fetch("https://api.github.com/repos/" + repo + "/releases");
-                break;
-            case "commits":
-                response = await fetch("https://api.github.com/repos/" + repo + "/commits");
-                break;
-        }
-
+        let response = await fetch("https://api.github.com/repos/" + repo + "/" + type);
         let data = await response.json();
 
         for (i = 0; i < 10; i++) {
