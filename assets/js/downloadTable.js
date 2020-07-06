@@ -1,4 +1,4 @@
-var repo = "{{ site.github_user }}/{{ site.github_repo }}";
+var repo = "tempestsbox/ttb";
 const max_to_display = 5;
 
 async function outputData(type) {
