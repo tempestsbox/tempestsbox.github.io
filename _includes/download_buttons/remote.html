@@ -1,36 +1,93 @@
-<script>
-    async function fetchGitHubData(repo, type) {
-        console.log("Fetching API data for repo " + repo);
+<h3>Releases <i class='fas fa-star'></i></h3>
 
-        let response = await fetch("https://api.github.com/repos/" + repo + "/" + type);
-        let data = await response.json();
+<table class="builds-table">
+    <tbody class="output releases">
+        <tr>
+            <td center>
+                Loading...
+            </td>
+        </tr>
+    </tbody>
+</table>
 
-        let output = "";
-        for (i = 0; i < 10; i++) {
-            if (i > data.length - 1) return;
+<h3>Snapshots <i class='fas fa-bug'></i></h3>
+<table class="builds-table">
+    <tbody class="output commits">
+        <tr>
+            <td center>
+                Loading...
+            </td>
+        </tr>
+    </tbody>
+</table>
 
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script async>
+    var repo = "{{ site.github_user }}/{{ site.github_repo }}";
+    const max_to_display = 5;
+
+    async function outputData(type) {
+        console.log('Fetching API data for repo ' + repo);
+        var response = await fetch('https://api.github.com/repos/' + repo + '/' + type);
+        var data = await response.json();
+
+        let output = '';
+        for (i = 0; i < Math.min(max_to_display, data.length); i++) {
             let title;
+            let id;
+            let date;
+            let link_content;
             switch (type) {
-                case "releases":
+                case 'releases':
                     title = data[i].name;
+                    id = data[i].tag_name;
+                    date = data[i].published_at;
+
+                    link_content = `
+                        <td>
+                            <a href='https://github.com/${repo}/archive/${id}.zip' style='border-bottom: none;'>&nbsp;
+                            <i class='fas fa-download'></i> ${title}
+                            </a>
+                        </td>  
+                    `
+
                     break;
-                case "commits":
+                case 'commits':
                     title = data[i].commit.message;
+                    id = data[i].sha;
+                    date = data[i].commit.committer.date;
+
+                    title = title.split('\n');
+                    title = title[0];
+                    let build_number = data.length - i;
+                    link_content = `
+                        <td>
+                            <a href='https://github.com/${repo}/archive/${id}.zip' style='border-bottom: none;'>&nbsp;
+                            <i class='fas fa-download'></i> #${build_number}
+                            </a>
+                        </td>
+                        <td data-build-id='${build_number}'>${title}</td>   
+                    `
+
                     break;
             }
 
-            title = title.split("\n");
-            title = title[0];
+            let content = `
+            <tr>
+                ${link_content}
+                <td style='float: right;'>${new Date(date).toISOString().split('T')[0]}</td>
+            </tr>
+            `
 
-            console.log(title);
-
-            output += (title);
-            if (i != data.length - 1) output += "\n";
+            if (i != data.length - 1) content += '<br>';
+            output += (content);
         }
-        console.log(output);
+
+        $('.output.' + type).html(output);
     }
 
-    let repo = "{{ site.github_user }}/{{ site.github_repo }}";
-    fetchGitHubData(repo, "releases");
-    fetchGitHubData(repo, "commits");
+    var types = [ 'releases', 'commits' ];
+    for (i = 0; i < types.length; i++) {
+        outputData(types[i]);
+    }
 </script>
