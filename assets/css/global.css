@@ -701,7 +701,7 @@ img.broken:after {
     table {
         display: none;
     }
-    table:after {
+    table:not(.builds-table):after {
         content: "Tables are not supported on mobile";
         display: block;
     }
