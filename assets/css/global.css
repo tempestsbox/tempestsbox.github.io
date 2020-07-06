@@ -483,6 +483,12 @@ button#classic {
 button#report-bug {
     background-color: rgb(231, 76, 60);
 }
+button#generic-download {
+    background-color: #663399;
+}
+button#generic-download-extras {
+    background-color: #008000;
+}
 button.minor {
     font-size: 18px;
     padding: 8px 16px;
