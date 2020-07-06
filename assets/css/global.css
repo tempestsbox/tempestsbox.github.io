@@ -33,6 +33,8 @@ h1 {
 h2:not([ignore-underline]):not([center]):not([title]) {
     padding-bottom: .4em;
     border-bottom: solid #ffffff46 1px;
+}
+h2 {
     font-weight: normal;
 }
 h3 {
