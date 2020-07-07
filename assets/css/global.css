@@ -865,9 +865,13 @@ img.broken:after {
     text-align: left;
     vertical-align: middle;
     border: none;
+    font-size: 16px;
+    line-height: 1.3em;
 }
 .builds-table > tbody.ttb.releases > tr:first-child {
     background-color: #2E7D32;
+    border-radius: 10px;
+    border-bottom: none;
 }
 .builds-table > tbody.ttb.commits > tr > td:first-child {
     padding-left: 1px;
@@ -880,6 +884,10 @@ img.broken:after {
 }
 .builds-table > tbody > tr {
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+.builds-table > tbody > tr.minified > td {
+    font-size: 15px;
+    line-height: 1em;
 }
 .builds-table > tbody > tr > td > a > code {
     color: #039be5;

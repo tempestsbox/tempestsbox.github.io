@@ -1,10 +1,4 @@
-const max_to_display = 5;
-
-async function outputData(type, repo_extra) {
-    var repo_user = "tempestsbox";
-    var repo_id = "ttb";
-
-    if (repo_extra != undefined) repo_id += `-${repo_extra}`;
+async function outputData(repo_user, repo_id, type, max_to_display, minified, show_date) {
     var repo = `${repo_user}/${repo_id}`;
 
     console.log(`Fetching API data for repo ${repo}`);
@@ -32,7 +26,7 @@ async function outputData(type, repo_extra) {
 
                     name = item.name;
                     download_link = `https://github.com/${repo}/archive/${item.tag_name}.zip`;
-                    name_link = `https://tempestsbox.github.io/article/release-${item.tag_name}`;
+                    name_link = `${window.location.origin}/article/release-${item.tag_name}`;
 
                     break;
                 case 'commits':
@@ -48,14 +42,17 @@ async function outputData(type, repo_extra) {
             }
 
             let content_date = '';
-            if (repo_extra != 'classic') {
+            if (show_date != false) {
                 content_date = new Date(date).toISOString().split('T')[0];
             } else {
                 name_link = download_link;
             }
 
+            let tr = 'tr';
+            if (minified) tr += " class='minified'";
+
             let content = `
-            <tr>
+            <${tr}>
                 <td>
                     <a href='${download_link}' style='border-bottom: none;'>
                         <i class='fas fa-download'></i>
@@ -76,6 +73,3 @@ async function outputData(type, repo_extra) {
 
     $(`.output.${repo_id}.${type}`).html(output);
 }
-
-['releases', 'commits'].forEach((item) => outputData(item));
-outputData('releases', 'classic');

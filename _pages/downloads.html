@@ -8,7 +8,10 @@ navigation_weight: 2
 <script>var textElement = undefined;</script>
 
 <h1 center>{{ page.title }}</h1>
-{% include download_buttons/remote.html %}
+<section id="downloads" class="no-highlight">
+    {% include fetched_builds_table.html title='Releases' icon='fas fa-star' type='releases' github_user=site.github_user github_repo=site.github_repo max_to_display=5 %}
+    {% include fetched_builds_table.html title='Snapshots' icon='fas fa-bug' type='commits' github_user=site.github_user github_repo=site.github_repo max_to_display=10 minified=true %}
+</section>
 
 <div style='height: 5px;'><br></div>
 
@@ -21,6 +24,18 @@ navigation_weight: 2
 
 <h2 ignore-underline>License</h2>
 <p>This project is covered by the <a href="https://github.com/{{ site.github_user }}/{{ site.github_repo }}/blob/{{ site.github_default_branch }}/LICENSE">MIT License</a>.</p>
+
+<hr class="separator">
+
+<h2 ignore-underline>More</h2>
+{% include fetched_builds_table.html title='Classic' icon='fas fa-fast-backward' type='releases' github_user=site.github_user github_repo='ttb-classic' max_to_display=2 show_date=false minified_header=true minified=true %}
+
+<h3>Extras</h3>
+<a href="/extras">
+    <button class="large" id="generic-download-extras">
+        <i class="fas fa-download"></i> Download TTB Extras
+    </button>
+</a>
 
 <hr class="separator">
 
