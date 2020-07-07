@@ -1,7 +1,12 @@
-var repo = "tempestsbox/ttb";
 const max_to_display = 5;
 
-async function outputData(type) {
+async function outputData(type, repo_extra) {
+    var repo_user = "tempestsbox";
+    var repo_id = "ttb";
+
+    if (repo_extra != undefined) repo_id += `-${repo_extra}`;
+    var repo = `${repo_user}/${repo_id}`;
+
     console.log(`Fetching API data for repo ${repo}`);
     var response = await fetch(`https://api.github.com/repos/${repo}/${type}`);
     var data = await response.json();
@@ -15,36 +20,32 @@ async function outputData(type) {
             let link_content;
             switch (type) {
                 case 'releases':
-                    title = item.name;
-                    id = item.tag_name;
                     date = item.published_at;
 
                     link_content = `
                         <td>
-                            <a href='https://github.com/${repo}/archive/${id}.zip' style='border-bottom: none;'>&nbsp;
-                            <i class='fas fa-download'></i> ${title}
+                            <a href='https://github.com/${repo}/archive/${item.tag_name}.zip' style='border-bottom: none;'>
+                                <i class='fas fa-download'></i>
+                                &nbsp;
+                                ${item.name}
                             </a>
-                        </td>  
+                        </td>
+                        <td>${item.body.split('\n')[item.body.split('\n').length - 1]}</td>
                     `
 
                     break;
                 case 'commits':
-                    title = item.commit.message;
-                    id = item.sha;
                     date = item.commit.committer.date;
-
-                    title = title.split('\n');
-                    title = title[0];
-
-                    let build_number = data.length - index;
 
                     link_content = `
                         <td>
-                            <a href='https://github.com/${repo}/archive/${id}.zip' style='border-bottom: none;'>&nbsp;
-                            <i class='fas fa-download'></i> #${build_number}
+                            <a href='https://github.com/${repo}/archive/${item.sha}.zip' style='border-bottom: none;'>
+                                <i class='fas fa-download'></i>
+                                &nbsp;
+                                <code>[${item.sha.substring(0, 7)}]</code>
                             </a>
                         </td>
-                        <td data-build-id='${build_number}'>${title}</td>   
+                        <td>${item.commit.message.split('\n')[0]}</td>   
                     `
 
                     break;
@@ -61,7 +62,8 @@ async function outputData(type) {
             output += (content);
     });
 
-    $(`.output.${type}`).html(output);
+    $(`.output.${repo_id}.${type}`).html(output);
 }
 
 ['releases', 'commits'].forEach((item) => outputData(item));
+outputData('releases', 'classic');

@@ -866,12 +866,24 @@ img.broken:after {
     vertical-align: middle;
     border: none;
 }
-.builds-table > tbody > tr:first-child {
-    background-color: purple;
+.builds-table > tbody.ttb.releases > tr:first-child {
+    background-color: #2E7D32;
+}
+.builds-table > tbody.ttb.commits > tr > td:first-child {
+    padding-left: 1px;
+}
+.builds-table > tbody:not(.ttb-classic) > tr > td:first-child {
+    text-align: center;
 }
 .builds-table > tbody > tr > td:last-child {
     padding-right: 18px;
 }
 .builds-table > tbody > tr {
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+.builds-table > tbody > tr > td > a > code {
+    color: #039be5;
+}
+.builds-table > tbody > tr > td > a > code:hover {
+    color: #00a9fd;
 }
