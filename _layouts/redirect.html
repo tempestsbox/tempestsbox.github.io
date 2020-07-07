@@ -5,10 +5,12 @@ layout: default
 <p style='font-size: 40px;'>Redirecting to {{ page.redirect_url }}</p>
 
 <script>
-    const newurl = "{{ site.url }}/{{ page.redirect_url }}";
+    var newURL = '{{ page.redirect_url }}';
+    if (!newURL.startsWith('http')) newURL = '{{ site.url }}/' + newURL;
+
     document.addEventListener('DOMContentLoaded', (event) => {
-        window.location.href = newurl;
-        window.location.replace = newurl;
+        window.location.href = newURL;
+        window.location.replace = newURL;
         window.location.refresh();
     });
 </script>

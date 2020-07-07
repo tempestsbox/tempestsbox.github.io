@@ -14,50 +14,58 @@ async function outputData(type, repo_extra) {
     let output = '';
     data.slice(0, max_to_display)
         .map((item, index) => {
-            let title;
-            let id;
+            let name;
             let date;
-            let content_link;
+            let extra_content;
+
+            let name_link;
+            let download_link;
+
             switch (type) {
                 case 'releases':
                     date = item.published_at;
                     split_body = item.body.split('\n');
 
-                    content_link = `
-                        <td>
-                            <a href='https://github.com/${repo}/archive/${item.tag_name}.zip' style='border-bottom: none;'>
-                                <i class='fas fa-download'></i>
-                                &nbsp;
-                                ${item.name}
-                            </a>
-                        </td>
-                        <td>${split_body[split_body.length - 1]}</td>
+                    extra_content = `
+                <td>${split_body[split_body.length - 1]}</td>
                     `
+
+                    name = item.name;
+                    download_link = `https://github.com/${repo}/archive/${item.tag_name}.zip`;
+                    name_link = `https://tempestsbox.github.io/article/release-${item.tag_name}`;
 
                     break;
                 case 'commits':
                     date = item.commit.committer.date;
 
-                    content_link = `
-                        <td>
-                            <a href='https://github.com/${repo}/archive/${item.sha}.zip' style='border-bottom: none;'>
-                                <i class='fas fa-download'></i>
-                                &nbsp;
-                                <code>[${item.sha.substring(0, 7)}]</code>
-                            </a>
-                        </td>
-                        <td>${item.commit.message.split('\n')[0]}</td>   
-                    `
+                    extra_content = `<td>${item.commit.message.split('\n')[0]}</td>`
+
+                    name = `<code>[${item.sha.substring(0, 7)}]</code>`;
+                    download_link = `https://github.com/${repo}/archive/${item.sha}.zip`;
+                    name_link = `https://github.com/tempestsbox/ttb/commit/${item.sha}`;
 
                     break;
             }
 
             let content_date = '';
-            if (repo_extra != 'classic') content_date = new Date(date).toISOString().split('T')[0];
+            if (repo_extra != 'classic') {
+                content_date = new Date(date).toISOString().split('T')[0];
+            } else {
+                name_link = download_link;
+            }
 
             let content = `
             <tr>
-                ${content_link}
+                <td>
+                    <a href='${download_link}' style='border-bottom: none;'>
+                        <i class='fas fa-download'></i>
+                    </a>
+                    &nbsp;
+                    <a href='${name_link}' target='_blank' style='border-bottom: none;'>
+                        ${name}
+                    </a>
+                </td>
+                ${extra_content}
                 <td style='float: right;'>&nbsp;${content_date}</td>
             </tr>
             `
