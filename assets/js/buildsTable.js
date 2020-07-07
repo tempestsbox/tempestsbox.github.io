@@ -17,12 +17,13 @@ async function outputData(type, repo_extra) {
             let title;
             let id;
             let date;
-            let link_content;
+            let content_link;
             switch (type) {
                 case 'releases':
                     date = item.published_at;
+                    split_body = item.body.split('\n');
 
-                    link_content = `
+                    content_link = `
                         <td>
                             <a href='https://github.com/${repo}/archive/${item.tag_name}.zip' style='border-bottom: none;'>
                                 <i class='fas fa-download'></i>
@@ -30,14 +31,14 @@ async function outputData(type, repo_extra) {
                                 ${item.name}
                             </a>
                         </td>
-                        <td>${item.body.split('\n')[item.body.split('\n').length - 1]}</td>
+                        <td>${split_body[split_body.length - 1]}</td>
                     `
 
                     break;
                 case 'commits':
                     date = item.commit.committer.date;
 
-                    link_content = `
+                    content_link = `
                         <td>
                             <a href='https://github.com/${repo}/archive/${item.sha}.zip' style='border-bottom: none;'>
                                 <i class='fas fa-download'></i>
@@ -51,10 +52,13 @@ async function outputData(type, repo_extra) {
                     break;
             }
 
+            let content_date = '';
+            if (repo_extra != 'classic') content_date = new Date(date).toISOString().split('T')[0];
+
             let content = `
             <tr>
-                ${link_content}
-                <td style='float: right;'>${new Date(date).toISOString().split('T')[0]}</td>
+                ${content_link}
+                <td style='float: right;'>&nbsp;${content_date}</td>
             </tr>
             `
 
