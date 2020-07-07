@@ -472,7 +472,7 @@ button#github {
     background-color: rgb(70, 70, 70);
 }
 button#github-extras {
-    background-color: rgb(183, 149, 11);
+    background-color: #1E8449;
 }
 button.download-coll#classic {
     background-color: rgba(70, 70, 70, 0.5);
@@ -484,10 +484,10 @@ button#report-bug {
     background-color: rgb(231, 76, 60);
 }
 button#generic-download {
-    background-color: #663399;
+    background-color: #7D3C98;
 }
 button#generic-download-extras {
-    background-color: rgb(183, 149, 11);
+    background-color: #1E8449;
 }
 button.minor {
     font-size: 18px;
@@ -869,7 +869,7 @@ img.broken:after {
     line-height: 1.3em;
 }
 .builds-table > tbody.ttb.releases > tr:first-child {
-    background-color: #2E7D32;
+    background-color: #1E8449;
     border-radius: 10px;
     border-bottom: none;
 }
