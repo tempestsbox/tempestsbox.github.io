@@ -17,8 +17,6 @@
     <a href='https://github.com/{{ include.github_user}}/{{ include.github_repo }}/commits' target='_blank'><p center>More...</p></a>
 {% endif %}
 
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-<script src="/assets/js/buildsTable.js"></script>
 <script>
     outputData('{{ include.github_user }}', '{{ include.github_repo }}', '{{ include.type }}', {{ include.max_to_display }}, {% if include.minified == true %}{{ include.minified }}{% else %}false{% endif %}, {% if include.show_date == false %}{{ include.show_date }}{% else %}true{% endif %});
 </script>
