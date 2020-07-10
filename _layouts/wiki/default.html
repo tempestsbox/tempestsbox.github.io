@@ -3,10 +3,11 @@ layout: default
 ---
 
 <script>
-    document.querySelectorAll("h2").forEach(element => {
+    document.addEventListener("DOMContentLoaded", function (event) {
+        document.querySelectorAll("h2").forEach(element => {
             element.classList.add("wiki");
-            console.log(element);
         });
+    });
 </script>
 
 <!-- {%- if page.new == true -%}

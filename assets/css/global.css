@@ -876,11 +876,15 @@ img.broken:after {
 .builds-table > tbody.ttb.commits > tr > td:first-child {
     padding-left: 1px;
 }
+.builds-table > tbody.ttb.commits > tr > td {
+    overflow: visible;
+}
 .builds-table > tbody:not(.ttb-classic) > tr > td:first-child {
     text-align: center;
 }
 .builds-table > tbody > tr > td:last-child {
     padding-right: 18px;
+    text-align: center;
 }
 .builds-table > tbody > tr {
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
@@ -894,4 +898,49 @@ img.broken:after {
 }
 .builds-table > tbody > tr > td > a > code:hover {
     color: #00a9fd;
+}
+.builds-table > tbody > tr.fetch-error > td {
+    line-height: 2em;
+    font-weight: bold;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltip-text {
+    opacity: 0%;
+    background-color: #47535f;
+    color: white;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 10px;
+    line-height: 1.2em;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    margin-left: -60px;
+}
+
+section#downloads.backup {
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    section#downloads:not(.backup) {
+        display: none;
+    }
+    section#downloads.backup {
+        display: unset;
+    }
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltip-text {
+    opacity: 100%;
+    transition: opacity 0.2s ease;
 }
