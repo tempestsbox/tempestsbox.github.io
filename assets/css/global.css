@@ -924,7 +924,9 @@ img.broken:after {
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
-    margin-left: -60px;
+    margin-left: -55px;
+    left: 45px;
+    top: -6px;
 }
 
 section#downloads.backup {
@@ -950,7 +952,6 @@ section#downloads.backup {
 }
 .download-type-selector .download-type-selector > * {
     padding: 8px 16px;
-    /* float: center; */
     width: auto;
     border: none;
     display: inline-block;
