@@ -1,7 +1,7 @@
-<h{% if include.minified_header == true %}3 style='margin-block-end: 0;'{% else %}2{% endif %} ignore-underline>
+{% if include.title %}<h{% if include.minified_header == true %}3 style='margin-block-end: 0;'{% else %}2{% endif %} ignore-underline>
     {{ include.title }}
     {% if include.icon %} <i class='{{ include.icon }}'></i>{% endif %}
-</h{% if include.minified_header == true %}3{% else %}2{% endif %}>
+</h{% if include.minified_header == true %}3{% else %}2{% endif %}>{% endif %}
 
 <table class="builds-table" {% if include.minified == true %}style='margin-top: 4px;'{% endif %}>
     <tbody class="output {{ include.github_repo }} {{ include.type }}">

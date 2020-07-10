@@ -944,3 +944,42 @@ section#downloads.backup {
     opacity: 100%;
     transition: opacity 0.2s ease;
 }
+
+.download-type-selector > * {
+    white-space: normal;
+}
+.download-type-selector .download-type-selector > * {
+    padding: 8px 16px;
+    /* float: center; */
+    width: auto;
+    border: none;
+    display: inline-block;
+    outline: 0;
+}
+.download-type-selector > * {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.download-type-selector > * {
+    color: white;
+}
+.download-type-selector > *:hover {
+    background-color: rgb(47, 47, 47);
+}
+.download-type-selector > *.active {
+    background-color: #b814e0;
+}
+.download-type-selector > *.active:hover {
+    background-color: #c130e6;
+}

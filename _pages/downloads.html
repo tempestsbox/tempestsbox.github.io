@@ -8,34 +8,64 @@ navigation_weight: 2
 <script>var textElement = undefined;</script>
 
 <h1 center>{{ page.title }}</h1>
+
 <section id="downloads" class="no-highlight">
-    {% include fetched_builds_table.html title='Releases' icon='fas fa-star' type='releases' github_user=site.github_user github_repo=site.github_repo max_to_display=5 %}
-    {% include fetched_builds_table.html title='Snapshots' icon='fas fa-bug' type='commits' github_user=site.github_user github_repo=site.github_repo max_to_display=10 minified=true %}
+    <div>
+        <div class="download-type-selector" center>
+            <button class="tablink active" onclick="showDownloadType(event,'Releases')">
+                Releases <i class='fas fa-star'></i>
+            </button>
+            <button class="tablink" onclick="showDownloadType(event,'Snapshots')">
+                Snapshots <i class='fas fa-bug'></i>
+            </button>
+            <button class="tablink" onclick="showDownloadType(event,'Classic')">
+                Classic <i class='fas fa-fast-backward'></i>
+            </button>
+            <button class="tablink" onclick="showDownloadType(event,'Extras')">
+                Extras <i class='fas fa-plus'></i>
+            </button>
+        </div>
+    
+        <div id="Releases" class="download-type">
+            {% include fetched_builds_table.html type='releases' github_user=site.github_user github_repo=site.github_repo max_to_display=5 %}
+
+            <div style='height: 5px;'><br></div>
+        </div>
+
+        <div id="Snapshots" class="download-type" style="display:none">
+            {% include fetched_builds_table.html type='commits' github_user=site.github_user github_repo=site.github_repo max_to_display=10 minified=true %}
+
+            <div style='height: 5px;'><br></div>
+        </div>
+
+        <div id="Classic" class="download-type" style="display:none">
+            {% include fetched_builds_table.html type='releases' github_user=site.github_user github_repo='ttb-classic' max_to_display=2 show_date=false minified_header=true minified=true %}
+
+            <div style='height: 5px;'><br></div>
+        </div>
+
+        <div id="Extras" class="download-type" style="display:none">
+            <br>
+            <a href="/downloads/extras">
+                <button center class="large" id="generic-download-extras">
+                    <i class="fas fa-download"></i> Download TTB Extras
+                </button>
+            </a>
+
+            <hr class="separator">
+        </div>
+    </div>
+
+    <script src='/assets/js/showDownloadType.js'></script>
 </section>
 <section id="downloads" class="no-highlight backup">
     <div center>{% include download_buttons/curseforge.html %}</div>
 </section>
 
-<div style='height: 5px;'><br></div>
-
 <h2 ignore-underline>Installation Instructions</h2>
 <p>These are installation instructions for <strong>the latest version of TTB</strong> - these will not work for classic 1.12.</p>
 
 {% include installation_buttons.html %}
-
-<hr class="separator">
-
-<h2 ignore-underline>More</h2>
-<section id="downloads" class="no-highlight">
-{% include fetched_builds_table.html title='Classic' icon='fas fa-fast-backward' type='releases' github_user=site.github_user github_repo='ttb-classic' max_to_display=2 show_date=false minified_header=true minified=true %}
-</section>
-
-<h3>Extras</h3>
-<a href="/downloads/extras">
-    <button class="large" id="generic-download-extras">
-        <i class="fas fa-download"></i> Download TTB Extras
-    </button>
-</a>
 
 <hr class="separator">
 
