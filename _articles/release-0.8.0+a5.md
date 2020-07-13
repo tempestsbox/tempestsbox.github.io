@@ -17,6 +17,7 @@ This release adds a... few... features 😄
 ### Changes in this version
 #### Amethyst Sunpad
 - Produces Tempite Sludge & Gel when exposed to sunlight
+
 #### Tempite Gel
 - Adds 100 Tempite to a Tempite Stone
 - Cannot be touched by human hands 👀
