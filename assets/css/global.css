@@ -876,6 +876,9 @@ img.broken:after {
 .builds-table > tbody.ttb.commits > tr > td:first-child {
     padding-left: 1px;
 }
+.builds-table > tbody.ttb > tr > td:first-child {
+    margin-right: 120px;
+}
 .builds-table > tbody.ttb.commits > tr > td {
     overflow: visible;
 }
