@@ -873,11 +873,14 @@ img.broken:after {
     border-radius: 10px;
     border-bottom: none;
 }
+.builds-table > tbody.ttb.releases > tr:first-child > td:first-child {
+   width: 97px;
+}
 .builds-table > tbody.ttb.commits > tr > td:first-child {
     padding-left: 1px;
 }
 .builds-table > tbody.ttb > tr > td:first-child {
-    margin-right: 120px;
+   width: 120px;
 }
 .builds-table > tbody.ttb.commits > tr > td {
     overflow: visible;
