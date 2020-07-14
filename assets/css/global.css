@@ -873,7 +873,7 @@ img.broken:after {
     border-radius: 10px;
     border-bottom: none;
 }
-.builds-table > tbody.ttb.releases > tr:first-child > td:first-child {
+.builds-table > tbody.ttb.releases > tr:first-child > td:last-child {
    width: 97px;
 }
 .builds-table > tbody.ttb.commits > tr > td:first-child {
