@@ -16,12 +16,4 @@ og_description: "The official TTB wiki"
 <h2 center title class="no-highlight">All Wikis</h2>
 <hr>
 
-{% include wiki_search_bar.html %}
-
-<div class="two-grid no-highlight" id="wiki-list">
-    {% assign wikis = site.wiki %}{% for wiki in wikis %}
-        {% if wiki.image_path and wiki.ignore_listing != true %}
-            {% include wiki_widget.html wiki=wiki %}
-        {% endif %}
-    {% endfor %}
-</div>
+{% include wiki/wiki_list.html %}

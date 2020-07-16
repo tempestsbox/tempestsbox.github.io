@@ -1,9 +1,0 @@
-<input center id='wiki-search' placeholder=' Search...' oninput='search()' onload='getSearchParam()' />
-<script>
-    var searchBox = document.getElementById('wiki-search');
-    searchBox.value = urlParams.get(searchParamName);
-
-    document.addEventListener('DOMContentLoaded', (event) => {
-            search();
-        });
-</script>

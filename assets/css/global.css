@@ -237,95 +237,6 @@ template {
 .portfolio {
     text-align: center;
 }
-div.two-grid {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: left;
-}
-div.two-grid .item {
-    max-width: 320px;
-    margin: 20px;
-}
-.bubble {
-    margin: 12px 0;
-    width: 320px;
-    height: 180px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: none;
-    background: #111;
-    border-radius: 3px;
-    width: 320px;
-    height: 180px;
-    overflow: hidden;
-}
-.bubble::after {
-    position: absolute;
-    display: block;
-    color: #fff;
-    font-family: "Font Awesome 5 Free";
-    font-size: 2em;
-    content: "\f35d";
-    opacity: 0;
-    transition: all .3s;
-}
-.bubble img {
-    width: 320px;
-    height: 180px;
-    border-bottom: none;
-}
-.bubble:focus::after,a.bubble:hover::after {
-    opacity: 1;
-    transition: all .3s;
-    transition-delay: .1s;
-}
-.bubble:focus .inner,a.bubble:hover .inner {
-    opacity: .35;
-    transition: all .5s,transform .5s;
-    transform: scale(1.1);
-    border-bottom: none;
-}
-.bubble .inner {
-    opacity: 1;
-    transition: all .5s,transform .5s;
-}
-div.two-grid h3,.two-grid h4,.two-grid h5 {
-    margin: 0;
-}
-#subtitle, #subtitle *, .subtitle, .subtitle * {
-    font-size: .95em;
-    color: #bbb;
-    line-height: 1.4em;
-    font-weight: 400;
-    margin-top: 0;
-}
-#subtitle *:hover, .subtitle *:hover {
-    border-bottom: solid 1px currentColor;
-}
-.two-grid#title a {
-    color: #fff;
-}
-.two-grid#title a:hover, a.two-grid#new:hover h3 {
-    border-left: solid 0.3em currentColor;
-    padding-left: 8px;
-    transition: all 0.2s ease;
-}
-a.two-grid#new h3 {
-    transition: all 0.2s ease;
-    font-size: 0.9em;
-}
-.two-grid#description {
-    font-size: .7em;
-    color: #bbb;
-    line-height: 1.4em;
-}
-.two-grid#new {
-    color: #999;
-}
 .intro .avatar {
     width: 80px;
     margin-bottom: 10px;
@@ -651,7 +562,7 @@ pre code {
     padding-left: 10px;
 }
 
-h4:not(.two-grid):not(.subtitle) {
+h4:not(.display-grid):not(.subtitle) {
     background-color: rgba(255, 255, 255, 0.04);
 }
 
@@ -696,14 +607,14 @@ img.broken:before {
     display: block;
     font-size: 14px;
 }
-img.broken:after { 
+/* img.broken:after { 
     content: "tempestsbox.github.io" attr(src);
     display: block;
     font-size: 12px;
     font-style: italic;
     font-weight: normal;
     color: rgb(185, 185, 185);
-}
+} */
 
 @media (pointer:none), (pointer:coarse) {
     table {
@@ -989,4 +900,85 @@ section#downloads.backup {
 }
 .download-type-selector > *.active:hover {
     background-color: #c130e6;
+}
+
+/* /wiki */
+ul.display-grid {
+    padding-inline-start: 0;
+    justify-content: center;
+}
+.display-grid > li {
+    transition: all .5s ease;
+    margin-bottom: 10px;
+}
+.display-grid > li, .display-grid > li > *, .display-grid > li > * > * {
+    border-radius: 4px;
+}
+.display-grid > li:hover {
+    transform: scale(1.1);
+    border-bottom: none;
+}
+.display-grid-heading {
+    font-size: 28px;
+}
+#display-grid > .header {
+    width: 100%;
+}
+.display-grid, section#display-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    text-align: center;
+    list-style: none;
+    margin-left: 0;
+}
+.display-grid > li {
+    max-width: 180px;
+    margin-right: 4px;
+}
+.display-grid > li > a > .new {
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+}
+.display-grid > li > a > .description {
+    font-size: 12px;
+    color: rgb(105, 105, 105);
+    line-height: 14px;
+}
+.wiki-widget > a > .title {
+    font-size: 16px;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+@media screen {
+    @media (max-width: 400px) {
+        .display-grid > li {
+            max-width: 100%;
+        }
+    }
+    @media (min-width: 400px) and (max-width: 600px) {
+        .display-grid > li {
+            max-width: 48%;
+        }
+    }
+    @media (min-width: 600px) and (max-width: 1000px) {
+        .display-grid > li {
+            max-width: 32.5%;
+        }
+    }
+    @media (max-width: 600px) {
+        .display-grid > li > a > .description, .display-grid > li > a > .new {
+            display: none;
+        }
+        .display-grid > li {
+            margin-right: 0;
+        }
+    }
+    @media (max-width: 1000px) {
+        section#display-grid {
+            justify-content: center;
+        }
+    }
 }

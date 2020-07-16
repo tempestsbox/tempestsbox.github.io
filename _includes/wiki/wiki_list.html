@@ -1,0 +1,10 @@
+<section id="display-grid" no-highlight>
+    <ul class="display-grid">
+        {% assign wikis = site.wiki %}
+        {%- for wiki in wikis -%}
+            {%- if wiki.category -%}{%- elsif wiki.ignore_listing != true -%}
+                {% include wiki/wiki_widget.html wiki=wiki %}
+            {%- endif -%}
+        {%- endfor -%}
+    </ul>
+</section>

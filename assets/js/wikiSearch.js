@@ -6,7 +6,7 @@ function search() {
 
     if (searchTerm != '') {
         $(".grid.item").each(function () {
-            if ($(this).find(".two-grid#title")[0].innerHTML.toLowerCase().indexOf(searchTerm.toLowerCase()) == -1) {
+            if ($(this).find(".display-grid#title")[0].innerHTML.toLowerCase().indexOf(searchTerm.toLowerCase()) == -1) {
                 $(this).hide();
             } else {
                 $(this).show();
