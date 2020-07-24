@@ -1,7 +1,7 @@
 ---
 title: "TTB v0.8.0 alpha 7 is now out!"
 layout: article
-og_description: "A large structure bug fix"
+og_description: "General features, updates, and fixes"
 ---
 
 ##### (24/07/20)
