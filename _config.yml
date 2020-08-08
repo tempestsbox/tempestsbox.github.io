@@ -18,10 +18,10 @@ collections:
     permalink: /wiki/:path
   redirects:
     output: true
-    permalink: /:path
+    permalink: /:path/
   pages:
     output: true
-    permalink: /:path
+    permalink: /:path/
   articles:
     output: true
-    permalink: /article/:path
+    permalink: /article/:path/
