@@ -28,19 +28,19 @@ navigation_weight: 2
         </div>
     
         <div id="Releases" class="download-type">
-            {% include fetched_builds_table.html type='releases' github_user=site.github_user github_repo=site.github_repo max_to_display=5 %}
+            {% include fetched_builds_table.html type='releases' github_user=site.data.settings.github_user github_repo=site.data.settings.github_repo max_to_display=5 %}
 
             <div style='height: 5px;'><br></div>
         </div>
 
         <div id="Snapshots" class="download-type" style="display:none">
-            {% include fetched_builds_table.html type='commits' github_user=site.github_user github_repo=site.github_repo max_to_display=10 minified=true %}
+            {% include fetched_builds_table.html type='commits' github_user=site.data.settings.github_user github_repo=site.data.settings.github_repo max_to_display=10 minified=true %}
 
             <div style='height: 5px;'><br></div>
         </div>
 
         <div id="Classic" class="download-type" style="display:none">
-            {% include fetched_builds_table.html type='releases' github_user=site.github_user github_repo='ttb-classic' max_to_display=2 show_date=false minified_header=true minified=true %}
+            {% include fetched_builds_table.html type='releases' github_user=site.data.settings.github_user github_repo='ttb-classic' max_to_display=2 show_date=false minified_header=true minified=true %}
 
             <div style='height: 5px;'><br></div>
         </div>
