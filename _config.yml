@@ -1,7 +1,7 @@
 collections:
   wiki:
     output: true
-    permalink: /wiki/:path
+    permalink: /wiki/:path/
   redirects:
     output: true
     permalink: /:path/
