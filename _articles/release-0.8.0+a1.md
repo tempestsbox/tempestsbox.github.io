@@ -6,7 +6,7 @@ og_description: "Say goodbye to ver/1.16 - here's a first alpha release! Remembe
 
 **Update** We've just released `a2`/`a3` hotfixes
 
-Say goodbye to `ver/1.16` - here's a first alpha release! Remember that this *is* an alpha release, so not everything from classic TTB will be implemented. On the same topic, if you find any bugs, please [send them to us via the issue tracker](https://github.com/{{ site.github_user }}/{{ site.github_repo }}/issues/new)!
+Say goodbye to `ver/1.16` - here's a first alpha release! Remember that this *is* an alpha release, so not everything from classic TTB will be implemented. On the same topic, if you find any bugs, please [send them to us via the issue tracker](https://github.com/{{ site.data.settings.github_user }}/{{ site.data.settings.github_repo }}/issues/new)!
 
 You can find a more detailed explanation of a few of the features below at our work-in-progress TTB wiki - [tempestsbox.github.io/wiki](/wiki)
 

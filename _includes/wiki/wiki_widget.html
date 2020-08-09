@@ -1,6 +1,6 @@
 <li class='wiki-widget'>
     <a href='{{ include.wiki.url }}' style='border-bottom: none;'>
-        <div class='new'>{% if include.wiki.new == true %}New in {{ site.latest }}!{% else %}&nbsp;{% endif %}</div>
+        <div class='new'>{% if include.wiki.new == true %}New in {{ site.data.settings.latest }}!{% else %}&nbsp;{% endif %}</div>
         <img src='/assets/docs/{{ include.wiki.image_path }}'>
         <div class='title'>{{ include.wiki.title | truncate: 28 }}</div>
         <div class='description'>

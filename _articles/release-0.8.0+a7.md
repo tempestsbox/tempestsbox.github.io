@@ -37,7 +37,7 @@ published: true
     - The Eckspei Locker recipe no longer requires a hopper (replaced with iron ingot)
 
 ### Fixes in this version
-- Fixed the Amethyst Sunpad continuing to produce sludge/gel at night or in other dimensions ([#14](https://github.com/{{ site.github_user }}/{{ site.github_repo }}/issues/14))
+- Fixed the Amethyst Sunpad continuing to produce sludge/gel at night or in other dimensions ([#14](https://github.com/{{ site.data.settings.github_user }}/{{ site.data.settings.github_repo }}/issues/14))
 - Fixed the mobs introduced in `a5` not having the `ttb_mob` tag
 - Fixed a debug message that was targeting `@a`
 - Fixed non-existent function `ttb:entity/function/structure/item_frame/item/diamond`

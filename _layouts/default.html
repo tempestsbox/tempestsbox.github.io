@@ -12,11 +12,11 @@
         gtag('config', 'UA-167304117-1');
     </script>
 
-    <title>{{ page.title }} | {{ site.title }}</title>
+    <title>{{ page.title }} | {{ site.data.settings.title }}</title>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{% if page.description or page.og_description %}{{ page.description | truncate: 150 }}{{ page.widget_description | truncate: 150 }}{{ page.og_description }}{% else %}{{ site.description }}{% endif %}" />
+    <meta name="description" content="{% if page.description or page.og_description %}{{ page.description | truncate: 150 }}{{ page.widget_description | truncate: 150 }}{{ page.og_description }}{% else %}{{ site.data.settings.description }}{% endif %}" />
     <meta name="theme-color" content="{% if page.og_theme-color %}{{ page.og_theme-color }}{% else %}#34495E{% endif %}">
 
     <meta property="og:image" content="{% if page.image_path %}/assets/docs/{{ page.image_path }}{% elsif page.og_image %}{{ page.og_image }}{% else %}/assets/logo.png{%- endif -%}" />

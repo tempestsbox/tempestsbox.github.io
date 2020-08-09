@@ -7,7 +7,7 @@ og_description: "A large structure bug fix"
 ##### (14/07/20)
 
 ### Fixes in this version
-- Fixed many bugs that caused structures to not actually be seeded ([#13](https://github.com/{{ site.github_user }}/{{ site.github_repo }}/issues/13))
+- Fixed many bugs that caused structures to not actually be seeded ([#13](https://github.com/{{ site.data.settings.github_user }}/{{ site.data.settings.github_repo }}/issues/13))
 - Fixed dungeon room parameters overflowing into the next depth
 
 ---

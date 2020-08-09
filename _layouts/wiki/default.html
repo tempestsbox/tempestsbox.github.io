@@ -11,7 +11,7 @@ layout: default
 </script>
 
 <!-- {%- if page.new == true -%}
-    <a href="/wiki/new"><h3 center>New in {{ site.latest }}!</h3></a>
+    <a href="/wiki/new"><h3 center>New in {{ site.data.settings.latest }}!</h3></a>
 {%- endif -%} -->
 <h1 center>{{ page.title }}</h1>
 
@@ -31,5 +31,5 @@ layout: default
 
 <h2>Issues</h2>
 <li>
-    <a href="https://github.com/{{ site.github_user }}/{{ site.github_repo }}/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+{{ page.title }}">Open issues relating to '{{ page.title }}'</a>
+    <a href="https://github.com/{{ site.data.settings.github_user }}/{{ site.data.settings.github_repo }}/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+{{ page.title }}">Open issues relating to '{{ page.title }}'</a>
 </li>
