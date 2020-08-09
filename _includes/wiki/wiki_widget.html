@@ -3,9 +3,11 @@
         <div class='new'>{% if include.wiki.new == true %}New in {{ site.data.settings.latest }}!{% else %}&nbsp;{% endif %}</div>
         <img src='/assets/docs/{{ include.wiki.image_path }}'>
         <div class='title'>{{ include.wiki.title | truncate: 28 }}</div>
-        <div class='description'>
-            <div style='height: 4px;'><br></div>
-            {{ include.wiki.description | truncate: 86 }}
-        </div>
+        {%- if include.description != false -%}
+            <div class='description'>
+                <div style='height: 4px;'><br></div>
+                {{ include.wiki.description | truncate: 86 }}
+            </div>
+        {% endif %}
     </a>
 </li>

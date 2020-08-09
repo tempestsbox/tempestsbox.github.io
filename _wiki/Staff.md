@@ -1,8 +1,8 @@
 ---
-title: "Machine"
+title: "Staff"
 layout: wiki/default
 popular: true
 description: "Description"
-categories: []
+categories: [ item, staff ]
 image_path: "tempite_stone.png"
 ---

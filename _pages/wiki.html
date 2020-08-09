@@ -7,13 +7,28 @@ navigation_weight: 3
 og_description: "The official TTB wiki"
 ---
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="/assets/js/wikiSearch.js"></script>
+<br>
 
-<!-- <script src="/assets/js/peekaboo.js"></script> -->
+<section center class="intro no-highlight" id="title">
+    <img class="avatar ignore-defaults" style="width: 160px;" src="/assets/logo.png" alt="logo.png">
+    <h1>The Tempest's Box</h1>
+    <h3 title>Wiki</h3>
+</section>
+
+<p center>
+    The Tempest's Box is a Minecraft command project spanning <a href="https://youtube.com/watch?v=BSuQ29kRXKU" target="_blank">4 years</a>, created by <a href="https://youtube.com/channel/UC_LBXGLs8Sa0opJHFVDVBqA" target="_blank">Jragon014</a>, that adds countless features that add to the game under the themes of magic and exploration. The project was revived by <a href="/wiki/Team/DarkMagicSauce">DarkMagicSauce</a> after 2 years of inactivity, and later taken over by <a href="/wiki/Team/Andante">Andante</a>.
+</p>
 
 <hr>
-<h2 center title class="no-highlight">All Wikis</h2>
-<hr>
 
-{% include wiki/wiki_list.html %}
+<h3 center>Popular</h3>
+<section id="display-grid" no-highlight>
+    <ul class="display-grid" style="margin: auto;">
+        {% assign wikis = site.wiki %}
+        {%- for wiki in wikis -%}
+            {%- if wiki.popular == true -%}
+                {% include wiki/wiki_widget.html wiki=wiki description=false %}
+            {%- endif -%}
+        {%- endfor -%}
+    </ul>
+</section>

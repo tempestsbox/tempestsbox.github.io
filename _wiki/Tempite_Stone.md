@@ -2,7 +2,6 @@
 title: "Tempite Stone"
 reg_id: "tempite_stone"
 layout: wiki/default
-peekaboo: true
 new: true
 description: "The Tempite Stone is needed to power all the machines in TTB. Without it, your machines can't work!"
 categories: [ block, tempite, machine ]
