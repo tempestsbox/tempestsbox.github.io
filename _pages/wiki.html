@@ -21,14 +21,6 @@ og_description: "The official TTB wiki"
 
 <hr>
 
-<h3 center>Popular</h3>
-<section id="display-grid" no-highlight>
-    <ul class="display-grid" style="margin: auto;">
-        {% assign wikis = site.wiki %}
-        {%- for wiki in wikis -%}
-            {%- if wiki.popular == true -%}
-                {% include wiki/wiki_widget.html wiki=wiki description=false %}
-            {%- endif -%}
-        {%- endfor -%}
-    </ul>
-</section>
+<a href="https://wiki.thetempestsbox.com"><h2 center title>Go to Wiki</h2></a>
+
+<hr>
