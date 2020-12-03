@@ -36,7 +36,7 @@ async function outputData(repo_user, repo_id, type, max_to_display, minified, sh
                             extra_content = `
                     <td>
                         <div class='tooltip'>
-                            ${item.commit.message.split('\n')[0]}
+                            ${item.commit.message.split('\n')[0]}${item.commit.message.split('\n')[2] ? ' <i class="fas fa-plus"></i>' : ''}
                             <span class='tooltip-text no-highlight-anti'>
                                 ${item.commit.message.split('\n').join('<br>').split(' ').join('&nbsp;')}
                             </span>
