@@ -26,7 +26,7 @@ async function outputData(repo_user, repo_id, type, max_to_display, minified, sh
                     `
 
                             name = item.name;
-                            download_link = `https://github.com/${repo}/archive/refs/tag/${item.tag_name}.zip`;
+                            download_link = `https://github.com/${repo}/archive/refs/tags/${item.tag_name}.zip`;
                             name_link = `${window.location.origin}/article/release-${item.tag_name}`;
 
                             break;
